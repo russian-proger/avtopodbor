@@ -1,0 +1,275 @@
+@import "colors.css";
+
+html {
+  background: white;
+  font-family: Roboto;
+}
+
+body {
+  margin: 0;
+}
+
+header.main-header {
+  background-color: black;
+  height: 120px;
+}
+
+main {
+  background-color: black;
+  height: calc(100vh - 120px);
+  position: relative;
+  color: white;
+}
+
+main > .background-car {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/media/background-car.png');
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-height: 600px;
+  z-index: 0;
+}
+
+main > .title {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20pt;
+  z-index: 1;
+}
+
+main > .title > h1 {
+  text-align: center;
+  z-index: 2;
+}
+main > .button-wrapper {
+  appearance: none;
+  display: flex;
+  justify-content: center;
+  z-index: 23;
+  position: absolute;
+  width: 100% ;
+  height: 60px;
+  top: 64%;
+}
+main > .button-wrapper > button{
+width: 291px;
+border-radius: 8px;
+
+}
+.left-box-0{
+  height: 23%;
+  width: 32%;
+  position: relative;
+  top: 57%;
+  left: 3%;
+}
+.left-box-1{
+    background-color: #161616;
+    width: 333px;
+    height: 159px;
+}
+.left-box-2{
+  width: 13px;
+  height: 139px;
+  background-color: #161616;
+  position: relative;
+  left: 55%;
+  top: -81.5%;
+}
+.left-box-3{
+  width: 7px;
+  height: 124px;
+  background-color: #161616;
+  position: relative;
+  left: 58%;
+  top: -153%;
+}
+
+main > .left-box-0 > .left-box-1 > h1 {
+  font-size: 300%;
+  margin-left: 5%
+}
+main > .left-box-0 > .left-box-1 > h4{
+  font-size: 150%;
+  margin-top:-5%;
+  margin-left: 5%;
+}
+.right-box-0{
+  height: 23%;
+  width: 32%;
+  position: relative;
+  left: 65%;
+  top: 33.5%;
+  display: flex;
+  justify-content: flex-end;
+}
+.right-box-1{
+  background-color: #161616;
+  width: 333px;
+  height: 159px;
+  right:100%;
+}
+.right-box-2{
+  position: relative;
+  width:13px;
+  height:136px;
+  right: 57%;
+  background-color: #161616;
+}
+.right-box-3{
+  position: relative;
+  width:7px;
+  height:124px;
+  right: 61%;
+  background-color: #161616;
+}
+main > .right-box-0 > .right-box-1 > h1{
+  font-size: 300%;
+  margin-left: 78%;
+  margin-top: 0%;
+}
+main > .right-box-0 > .right-box-1 > h4{
+  font-size: 150%;
+  margin-top: -5%;
+  text-align: right;
+  margin-right: 5%;
+}
+.center-box-1{
+  top: 8%;
+  position: relative;
+  left: 42%;
+  background-color: #000000;
+  width: 333px;
+  height: 159px;
+}
+main > .center-box-1 > h1{
+  font-size: 300%;
+  margin-left: 29%;
+}
+main > .center-box-1 > h4{
+  font-size: 150%;
+  margin-left: 8%;
+} 
+.services{
+  position: relative;
+  height:calc(100vh + 220px)
+}
+.services-box{
+  position: relative;
+  height: 80%;
+  width: 80%;
+  left: 10%;
+  top: 11%;
+  display: flex;
+  color: black;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.services > .services-box > .services-box-h1{
+  position: relative;
+  margin-left: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+.services > .services-box > .services-box-h1 > h1{
+  font-size: 350%;
+  font-weight: 100;
+}
+.under-services-box{
+  height: 5%;
+  width: 60%;
+  background-color: black;
+  position: relative;
+  left: 20%;
+  bottom: 3%;
+}
+.field-inspection{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: space-around;
+}
+.field-inspection-1{
+  position: relative;
+  border-color: black;
+  border-radius: 10px;
+  border-width: 1px;
+  width: 25%;
+  height: 100%;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+.field-inspection-2{
+  position: relative;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 1px;
+    width: 25%;
+    height: 100%;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.field-inspection-3{
+  position: relative;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 1px;
+    width: 25%;
+    height: 100%;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.services > .services-box > .field-inspection > .field-inspection-1 > h3{
+  font-weight: 100;
+}
+.services > .services-box > .field-inspection > .field-inspection-1 > h1{
+  font-family: cursive;
+}
+.services > .services-box > .field-inspection > .field-inspection-1 > .services-button-wrapper-1 > button{
+  background-color: yellow;
+  width: 100%;
+  border-color: yellow;
+}
+.services > .services-box > .field-inspection > .field-inspection-2 > h3{
+  font-weight: 100;
+}
+.services > .services-box > .field-inspection > .field-inspection-2 > h1{
+  font-family: cursive;
+}
+.services > .services-box > .field-inspection > .field-inspection-2 > .services-button-wrapper-1 > button{
+  background-color: yellow;
+  width: 100%;
+  border-color: yellow;
+}
