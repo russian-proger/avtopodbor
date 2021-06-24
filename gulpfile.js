@@ -4,14 +4,16 @@ const gulp = require('gulp');
 const node_sass = require('node-sass');
 
 /** @param {string} path */
-function compileSass(path) {
+function compileSass(path, _arg, attempt=0) {
   try {
     node_sass.render({
       file: path
     }, function(err, result) {
       if (result) {
-        if (result.css.length == 0 && fs.readFileSync(path).length != 0) {
-          compileSass(path);
+        console.log(result.css.length, attempt);
+        if (result.css.length <= 10 && attempt < 3) {
+          console.log(`attempt (${attempt + 1})`, attempt + 1);
+          compileSass(path, 0, attempt + 1);
           return;
         }
         let filename = path.slice(path.lastIndexOf('/') + 1, path.lastIndexOf('.'));

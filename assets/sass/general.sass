@@ -3,15 +3,18 @@
 html
   background: white
   font-family: Roboto
-
+  overflow-x: hidden
 
 body
   margin: 0
+  overflow-x: hidden
+  overflow-y: hidden
 
+  & *
+    overflow: visible
 
 header.main-header
   background-color: black
-  height: 80px
 
 
 // ------- //
@@ -32,22 +35,39 @@ header.main-header
   box-sizing: border-box
   flex-direction: row
   justify-content: space-between
+  align-items: center
   padding: 0 50px
   z-index: 1000
+  color: white
+  height: 80px
+
+  font-size: 20pt
+  @media (max-width: 1100px)
+    font-size: 16pt
+
+  @media (max-width: 780px)
+    height: 50px
+    padding: 0 20px
 
   .top-left-cell
     box-sizing: border-box
     height: 100%
     width: 310px
 
+    @media (max-width: 780px)
+      width: 100px
+
     img
       width: 150px
-      transform: translateY(-30px)
+      transform: translateY(-40px)
       @media (max-width: 1100px)
         width: 125px
+        transform: translateY(-30px)
+
+      @media (max-width: 780px)
+        width: 100px
 
   .top-center-cell
-    height: 100%
     width: 30%
     display: flex
     flex-direction: row
@@ -55,30 +75,22 @@ header.main-header
     align-content: center
     justify-content: center
     color: white
-    font-size: 160%
-    @media (max-width: 1100px)
-      font-size: 140%
     @media (max-width: 1000px)
       width: auto
-      padding-
-    font-family: cursive
 
     & > a
       text-decoration: none
       color: white
   
-  .top-right-cell
+  nav.top-right-cell
     display: flex
-    font-size: 150%
     width: fit-content
     flex-direction: row
     flex-wrap: wrap
     justify-content: space-evenly
     align-content: center
-    @media (max-width: 1100px)
-      font-size: 120%
 
-    & > a
+    & > .nav-item
       position: relative
       margin-right: 15px
       cursor: pointer
@@ -122,8 +134,10 @@ main
   z-index: 1
   @media (max-height: 780px)
     position: relative
-    top: 79px
-    margin-bottom: 79px
+  @media (max-width: 780px)
+    top: 49px
+    margin-bottom: 49px
+    height: calc(100vh - 40px)
 
   & > .arrows-up
     position: absolute
@@ -185,6 +199,11 @@ main > .title
   font-size: 20pt
   @media (max-width: 1100px)
     font-size: 17pt
+  @media (max-width: 780px)
+    font-size: 14pt
+  @media (max-width: 600px)
+    font-size: 10pt
+    padding-top: 50px
   z-index: 1
 
 
@@ -192,7 +211,7 @@ main > .title > h1
   text-align: center
   z-index: 2
 
-main > .button-wrapper 
+main > .button-wrapper
   appearance: none
   display: flex
   justify-content: center
@@ -223,6 +242,9 @@ main > .info-row
 
   position: absolute
   bottom: 50px
+
+  @media (max-width: 860px)
+    display: none
 
   & > .info-box
     box-sizing: border-box
@@ -267,57 +289,136 @@ main > .info-row
 
 
 
+// --------- //
+// ^SERVICES //
+// --------- //
 .services 
   position: relative
-  height: calc(90vh + 120px)
   margin-top: 100vh
+  @media (max-width: 780px)
+    margin-top: 100vh
   @media (max-height: 780px)
-    margin-top: 0px
+    margin-top: 80px
+  @media (max-width: 780px) and (max-height: 780px)
+    margin-top: 80px
   background: white
   z-index: 2
+  padding-bottom: 200px
 
 .services-box
   box-sizing: border-box
   width: 100%
-  height: 90%
-  padding: 50px 0px
+  height: auto
+  padding: 50px 0px 150px
 
 .services > .services-box > .services-box-header
-  position: absolute
+  position: relative
   display: flex
   flex-direction: column
   flex-wrap: wrap
   justify-content: flex-start
   align-items: center
   align-content: center
+  margin-bottom: 100px
+  @media (max-width: 780px)
+    margin-bottom: 60px
+
+  & > span#services
+    position: relative
+
+    &::after
+      position: absolute
+      content: ''
+      background: black
+      width: 100%
+      height: 4px
+      bottom: -8px
+      left: 0
 
 .services > .services-box > .services-box-header > span
-  font-size: 350%
+  font-size: 40pt
+  @media (max-width: 780px)
+    font-size: 30pt
 
 .services-box-main
   width: 100%
-  height: 85%
+  height: auto
   top: 15%
   box-sizing: border-box
   display: flex
-  justify-content: space-around
-  position: absolute
+  align-items: center
+  justify-content: center
+  position: relative
 
-  & > .services-field-1,
-  & > .services-field-2,
-  & > .services-field-3
-    width: 25%
-    height: 70%
-    border-radius: 10px
-    border-color: black
+  @media (max-width: 1000px)
+    flex-direction: column
+
+  & > .services-field
+    box-sizing: border-box
+    width: 30%
+    max-width: 320px
+    height: 560px
+
+    
+    @media (max-width: 1000px)
+      width: 320px
+
+
+    padding: 30px 15px
+    margin: 0 15px 30px
+    
+    border-radius: 5px
+    border-color: #cccccc
     border-width: 1px
     border-style: solid
+    
     color: black
     text-align: center
+    background: #f5f5f5
+    
+    
+    display: flex
+    flex-direction: column
+    align-items: center
 
-    & > .services-button-wrapper > button
-      background-color: yellow
-      border-color: yellow
+    &:nth-of-type(2)
+      height: 580px
+      border-color: #4caf50
+
+    & > .field-title
+      font-size: 20pt
+
+    & > .content
+      height: 100%
+      flex-shrink: 2
+
+      & > .short-description
+        color: gray
+        font-size: 10pt
+        margin-top: 5px
+        margin-bottom: 30px
+
+      & > .cost
+        font-size: 24pt
+        font-weight: bold
+
+      & > .benefits
+        color: #555555
+        & > .benefits-item
+          margin-top: 20px
+
+    & > .order-button
+      height: 50px
+      background: #43a047
+      color: white
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 0 30px
+      cursor: pointer
+      transition: all 75ms ease-in-out
+      &:hover
+        background: #388e3c
 
 .services-box-header
   width: 100%
@@ -327,85 +428,115 @@ main > .info-row
   width: 100%
   height: 85%
 
+
+
+// --------- //
+// ^GUARANTEE //
+// --------- //
 .guarantee
   position: relative
-  height: calc(100vh + 120px)
-  z-index: 2
+  z-index: 3
+  color: white
 
 .guarantee-box
   width: 100%
   display: flex
   position: relative
-  height: 70%
-  background-color: yellow
-  justify-content: space-evenly
+  height: auto
+  background-color: #4caf50
+  justify-content: center
   flex-wrap: wrap
 
-.guarantee-box::after
-  display: block
-  content: ""
-  width: 100%
-  height: 25%
-  position: absolute
-  left: 0
-  top: 74.9%
-  transform: translateY(100%)
-  background-color: yellow
-  clip-path: polygon(100% 0, 0 0, 100% 100%)
+  @media (max-width: 799px)
+    flex-direction: column
+    align-items: center
+
+    .guarantee-box-header
+      font-size: 30pt
+      margin-bottom: 50px
+
+    .guarantee-list
+      width: 100%
+      margin: 0
+
+    .gl-lawyer
+      position: relative
+      margin-bottom: 70px
+      &::after
+        content: ""
+        position: absolute
+        width: 100%
+        height: 2px
+        background: #388e3c
+        bottom: -30px
+        max-width: 300px
+        left: 50%
+        transform: translateX(-50%)
+
 
 .guarantee-box::before
   display: block
   content: ""
-  width: 100%
-  height: 25%
+  width: 220%
+  height: calc(100% + 25vw)
   position: absolute
-  left: 0
-  top: 1px
-  transform: translateY(-100%)
-  background-color: yellow
-  clip-path: polygon(0 0, 0% 180%, 100% 100%)
+  left: -60%
+  top: 50%
+  transform-origin: center center
+  transform: translateY(-50%) rotate(10deg)
+  background-color: #4caf50
+  z-index: -1
 
 .guarantee-box-header
   width: 100%
   display: flex
   height: 20%
-  font-family: cursive
   font-size: 150%
   justify-content: center
+  font-size: 40pt
+  margin-bottom: 100px
 
-.guarantee-list-1,
-.guarantee-list-2
+.guarantee-list
+  box-sizing: border-box
   width: 40%
+  max-width: 450px
   height: 80%
-
-.guarantee-list-1,
-.guarantee-list-2
   display: flex
   flex-direction: column
   align-content: center
   align-items: center
   text-align: center
+  margin: 0 40px
 
-  & > .guarantee-logo-1 
-    width: 50%
-    height: 60%
+  & > .guarantee-logo
+    filter: brightness(50)
+    margin-bottom: 50px
+    & > img
+      width: 90px
 
-  & > .guarantee-logo-2 
-    width: 50%
-    height: 60%
+  & > .guarantee-title
+    font-size: 20pt
+    margin-bottom: 20px
+
+
+
+
 
 .check-placer
-  height: 100vh
+  display: none
+  height: calc(100vh - 80px)
+  @media (min-height: 900px) and (min-width: 1000px)
+    display: block
 
 .check
-  position: fixed
-  height: calc(100vh - 80px)
-  z-index: 1
+  padding-top: 300px
+  padding-bottom: 100px
   background: white
+  position: relative
+  z-index: 2
 
-  &.fixed
-    top: 80px
-    width: 100%
+  @media (max-height: 700px)
+    position: relative
 
   & > .check-header
     height: 15%
@@ -422,32 +553,13 @@ main > .info-row
     width: 100%
     position: relative
     height: 90%
-    flex-direction: row
+    flex-direction: column
     flex-wrap: wrap
     justify-content: center
-    
-    & > .check-row-1 
-      height: 100%
-      width: 20%
-      
-      & > .row-1-box-1,
-      & > .row-1-box-2,
-      & > .row-1-box-3
-        width: 100%
-        height: 33%
-        text-align: center
-        display: flex
-        flex-direction: column
-        justify-content: center
-        text-align: right
+    align-items: center
 
-      & > .row-1-box-1,
-      & > .row-1-box-3
-        position: relative
-        left: 50px
-
-    & > .check-row-2
-      display: flex
+    & > .check-column:nth-of-type(2)
+      display: none
       height: 100%
       width: 45%
       align-content: center
@@ -456,17 +568,16 @@ main > .info-row
       flex-wrap: wrap
       
       & > img
-        filter: brightness(1.2)
+        filter: brightness(1.2) hue-rotate(50deg)
         max-width: 550px
         z-index: -1
         transform: rotate(-90deg)
 
-    & > .check-row-3
+    & > .check-column:nth-of-type(2n - 1)
       height: 100%
-      width: 20%
-      & > .row-2-box-1,
-      & > .row-2-box-2,
-      & > .row-2-box-3
+      width: 100%
+      max-width: 400px
+      & > .check-block
         width: 100%
         height: 33%
         text-align: center
@@ -474,8 +585,57 @@ main > .info-row
         flex-direction: column
         justify-content: center
         text-align: left
-
-      & > .row-2-box-1,
-      & > .row-2-box-3
+        & > .check-logo
+          display: flex
+          align-items: center
+          justify-content: flex-start
+          flex-direction: row
+          font-size: 16pt
+          margin-bottom: 10px
+          white-space: nowrap
+      & > .row-block
         position: relative
         right: 50px
+        & > .check-logo
+          display: flex
+          align-items: center
+
+  @media (min-width: 1000px) and (min-height: 900px)
+    position: fixed
+    z-index: 1
+    height: calc(100vh - 80px)
+    padding-top: 0
+
+    &.fixed
+      top: 80px
+      width: 100%
+
+    & > .check-box
+      flex-direction: row
+      & > .check-column:nth-of-type(3)
+        .check-logo
+          flex-direction: row-reverse !important
+      & > .check-column:nth-of-type(2)
+        display: flex
+      & > .check-column:nth-of-type(1)
+        position: relative
+        left: 50px
+        .check-block
+          text-align: right !important
+      & > .check-column:nth-of-type(2n - 1)
+        width: 20%
+        & > .check-block > .check-logo
+          justify-content: flex-end
+
+.auto-selection-step 
+  position: relative
+  margin-top: 100vh
+  background: white
+  z-index: 2
+  padding-bottom: 200px
+
+.auto-selection-field
+  box-sizing: border-box
+  width: 100%
+  height: auto
+  padding: 50px 0px 150px

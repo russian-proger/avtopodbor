@@ -15,7 +15,7 @@
 
   <!-- Including css files -->
   <link rel="stylesheet" href="./assets/css/main-header.css">
-  <link rel="stylesheet" href="./assets/css/s_general.css">
+  <link rel="stylesheet" href="./assets/css/s_general.css?5">
   
 </head>
 <body>
@@ -27,13 +27,13 @@
       </div>
     </div>
     <div class="top-center-cell" >
-      <a href="tel://89228166678">+7 777 777-77-77</a>
+      <a href="tel://89228427279">+7 (922) 842-72-79</a>
     </div>
-    <div class="top-right-cell">
-      <a style="color: white;text-decoration: none;font-family: cursive">Услуги</a>
-      <a style="color: white;text-decoration: none;font-family: cursive">Гарантии</a>
-      <a style="color: white;text-decoration: none;font-family: cursive">Обо мне</a>
-    </div>
+    <nav class="top-right-cell">
+      <span class="nav-item">Услуги</span>
+      <span class="nav-item">Гарантии</span>
+      <span class="nav-item">Обо мне</span>
+    </nav>
   </header>
   
   <!-- First section -->
@@ -81,62 +81,94 @@
     <div class="services-box">
       <div class = "services-box-header">
         <span type = "description" id = "services" >Наши услуги</span>
-        <div calss = "header-line" style = " height: 3%;width: 10%;background-color: black;"></div>
       </div>
       <div class = "services-box-main">
-         <div class="services-field-1">
-            <span><h1>Выездной осмотр</h1></span>
-            <span>Цена зависит от класса автомобиля и сложности диагностики</span>
-            <span><h1 style = "font-family: cursive">от 1 000 ₽</h1></span>
-            <span><h4>Тест-драйв</h4></span>
-            <span><h4>Полный осмотр деталей</h4></span>
-            <span><h4>Техническая диагностика</h4></span>
-            <span><h4>Рекомендации о покупке данного автомобиля</h4></span>
-            <div class="services-button-wrapper">
-              <button>Заказать услугу</button>
+         <div class="services-field">
+            <div class="field-title">
+              <span>Выездной осмотр</span>
+            </div>
+            <div class="content">
+              <div class="short-description">
+                <span>Цена зависит от класса автомобиля и сложности диагностики</span>
+              </div>
+              <div class="cost">
+                <span>от 1 000 Р</h1>
+              </div>
+              <div class="benefits">
+                <div class="benefits-item">Тест-драйв</div>
+                <div class="benefits-item">Полный осмотр деталей</div>
+                <div class="benefits-item">Техническая диагностика</div>
+                <div class="benefits-item">Рекомендации о покупке данного автомобиля</div>
+              </div>
+            </div>
+            <div class="order-button">
+              <span>Заказать услугу</span>
             </div>
          </div>
-         <div class="services-field-2">
-          <span><h1>Специалист на день</h1></span>
-            <span>ГСМ оплачивается отдельно</span>
-            <span><h1 style = "font-family: cursive">от 5 000 ₽</h1></span>
-            <span><h4>Встреча с автовладельцем</h4></span>
-            <span><h4>Посещение автосалонов</h4></span>
-            <span><h4>Полный осмотр автомобиля на неисправности</h4></span>
-            <div class="services-button-wrapper">
-              <button>Заказать услугу</button>
+         <div class="services-field">
+            <div class="field-title">
+              <span>Специалист на день</span>
+            </div>
+            <div class="content">
+              <div class="short-description">
+                <span>ГСМ оплачивается отдельно</span>
+              </div>
+              <div class="cost">
+                <span>от 5 000 Р</h1>
+              </div>
+              <div class="benefits">
+                <div class="benefits-item">Встреча с автовладельцем</div>
+                <div class="benefits-item">Посещение автосалонов</div>
+                <div class="benefits-item">Полный осмотр автомобиля на неисправности</div>
+                <div class="benefits-item">Рекомендации о покупке данного автомобиля</div>
+              </div>
+            </div>
+            <div class="order-button">
+              <span>Заказать услугу</span>
             </div>
          </div>
-         <div class="services-field-3"> 
-            <span><h1>Автоподбор под ключ</h1></span>
-            <span>Цена зависит от класса автомобиля и сложности подбора</span>
-            <span><h1 style = "font-family: cursive">от 10 000 ₽</h1></span>
-            <span><h4>Торг с продавцом</h4></span>
-            <span><h4>Помощь при покупке</h4></span>
-            <span><h4>Помощь при поиске подходящего автомобиля</h4></span>
-            <span><h4>Неограниченное количество осмотров автомобиля</h4></span>
-            <div class="services-button-wrapper">
-              <button>Заказать услугу</button>
+         <div class="services-field">
+            <div class="field-title">
+              <span>Автоподбор под ключ</span>
+            </div>
+            <div class="content">
+              <div class="short-description">
+                <span>Цена зависит от класса автомобиля и сложности подбора</span>
+              </div>
+              <div class="cost">
+                <span>от 10 000 Р</h1>
+              </div>
+              <div class="benefits">
+                <div class="benefits-item">Торг с продавцом</div>
+                <div class="benefits-item">Помощь при покупке</div>
+                <div class="benefits-item">Помощь при поиске подходящего автомобиля</div>
+                <div class="benefits-item">Неограниченное количество осмотров автомобиля</div>
+              </div>
+            </div>
+            <div class="order-button">
+              <span>Заказать услугу</span>
             </div>
          </div>
       </div>
     </div>
-  </div> 
+  </div>
+
+
   <!-- Guarantee section -->
-  <div class = "guarantee" id = "guarantee">
-    <div class = "guarantee-box">
+  <div id="guarantee" class="guarantee">
+    <div class="guarantee-box">
      <div class="guarantee-box-header">
-        <h1 style = "font-family: cursive">Мы гарантируем</h1>
+        <span>Мы гарантируем</span>
      </div>
-     <div class="guarantee-list-1">
-        <div class="guarantee-logo-1"></div>
-        <div class="guarantee-list-1-text-1"><h1>Юридическую защиту</h1></div>
-        <div class="guarantee-list-1-text-2">Подобранный автомобиль будет полностью легален</div>
+     <div class="guarantee-list gl-lawyer">
+        <div class="guarantee-logo"><img src="/assets/media/lawyer.png" alt="lawyer"></div>
+        <div class="guarantee-title"><span>Юридическую защиту</span></div>
+        <div class="guarantee-descr"><span>Подобранный автомобиль будет полностью легален</span></div>
      </div>
-     <div class="guarantee-list-2">
-        <div class="guarantee-logo-2"></div>
-        <div class="guarantee-list-2-text-1"><h1>Юридическую защиту</h1></div>
-        <div class="guarantee-list-2-text-2">Подобранный автомобиль будет полностью легален</div>
+     <div class="guarantee-list gl-tech">
+        <div class="guarantee-logo"><img src="/assets/media/passport.png" alt="passport"></div>
+        <div class="guarantee-title"><span>Техническую исправность</span></div>
+        <div class="guarantee-descr"><span>Я даю гарантии на техническое состояние автомобиля на 60 дней с момента покупки автомобиля</span></div>
      </div>
     </div>
   </div>
@@ -148,40 +180,93 @@
       <h1>Что мы проверяем</h1>
     </div>
     <div class="check-box">
-      <div class="check-row-1">
-        <div class="row-1-box-1">
-          <h1>Кузов автомобиля</h1>
+      <div class="check-column">
+        <div class="check-block">
+          <div class = "check-logo">
+            <img src = "assets\media\car.svg" style = "width: 50px; height: 50px; padding: 5px">
+            <span class="check-title">Кузов машины</span>
+          </div>
           Проверка кузова на предмет перекраса, ремонта, снятия-установки элементов.
         </div>
-        <div class="row-1-box-2">
-          <h1>Тех. состояние</h1>
+        <div class="check-block">
+          <div class = "check-logo">
+            <img src="assets\media\engine.svg" style = "width: 50px;height: 50px;padding: 5px">
+            <span class="check-title">Тех. состояние</span>
+          </div>
           Проверка двигателя. Проверка АКПП по данным эбу и разл. тестами. Компьютерная диагностика ост. электронных блоков управления автомобиля ( АВS, ЕSР, SRS, Air bag, блоки управления кузовом т.д.).
         </div>
-        <div class="row-1-box-3">
-          <h1>Юр. чистоту</h1><img src="assets\media\guarantee list.png" alt= "logo">
+        <div class="check-block">
+          <div class = "check-logo">
+            <img src="assets\media\guarantee_list.svg" style = "width: 50px; height: 50px">
+            <span class="check-title">Юр. чистоту</span>
+          </div>
           Криминалистическая экспертиза автомобиля. Проверка в ГИБДД и Бюро Кредитных Историй.
         </div>
       </div>
-      <div class="check-row-2">
+      <div class="check-column">
         <img src="https://clipartion.com/wp-content/uploads/2016/04/clip-art-race-car.png">
       </div>
-      <div class="check-row-3">
-        <div class="row-2-box-1">
-          <h1>Пробег</h1>
+      <div class="check-column">
+        <div class="check-block">
+          <div class="check-logo">
+            <img src="assets\media\speedometr.svg" style="width: 50px; height: 50px;padding: 5px">
+            <span class="check-title">Пробег</span>
+          </div>
           Проверка правильной работы бортового компьютера и его показаний.
         </div>
-        <div class="row-2-box-2">
-          <h1>Тормоза</h1>
+        <div class="check-block">
+          <div class="check-logo">
+            <img src="assets\media\car_brake.svg" style="width: 50px; height: 50px;padding: 5px">
+            <span class="check-title">Тормоза</span>
+          </div>
           Проверяем состояние тормозных механизмов, дисков, колодок, антиблокировочной, антипробуксовочной систем и антизаноса.
         </div>
-        <div class="row-2-box-3">
-          <h1>Колеса</h1>
+        <div class="check-block">
+          <div class="check-logo">
+            <img src="assets\media\wheel.svg" style="width: 50px; height: 50px;padding: 5px">
+            <span class="check-title">Колеса</span>
+          </div>
           Равномерность износа, дата производства, состояние и марка шин.
         </div>
       </div>
     </div>
   </div>
 
-  <script src="./assets/js/main.js" defer></script>
+  <!-- AUTO SELECTION STEPS -->
+  <div class="auto-selection-step">
+    <div class="auto-selection-field">
+      <div class="auto-selection-header">
+        <h1>Как происходит подбор авто?</h1>
+      </div>
+      <div class="auto-selection-main">
+        <div class="phone">
+          <div class="phone-logo">
+            <img src="assets\media\phone.svg">
+          </div>
+          <div class="phone-info">
+            Вы звоните, эксперт консультирует вас, оговариваем все критерии подбора.
+          </div>          
+        </div>&#10144;
+        <div class="machine-card">
+          <div class="machine-card-logo">
+            <img src="assets\media\machine_card.svg">
+          </div>         
+          <div class="machine-card-info">
+            Проверяем все возможные варианты и ищем самый лучший.
+          </div> 
+        </div>&#10144;
+        <div class="auto-key">
+          <div class="auto-key-logo">
+            <img src="assets\media\wee_wee.svg">
+          </div>
+          <div class="auto-key-info">
+            Смотрим выбранный авто вместе с вами, еще раз проверяем его и покупаем.
+          </div>
+        </div>&#10144;
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/main.js?2" defer></script>
 </body>
 </html>
