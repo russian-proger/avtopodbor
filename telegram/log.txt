@@ -1,0 +1,38 @@
+{"update_id":751027182,
+"message":{"message_id":94,"from":{"id":1731469583,"is_bot":false,"first_name":"\u0413\u0435\u043d\u0430","language_code":"ru"},"chat":{"id":1731469583,"first_name":"\u0413\u0435\u043d\u0430","type":"private"},"date":1624723364,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+{"update_id":751027183,
+"message":{"message_id":95,"from":{"id":1731469583,"is_bot":false,"first_name":"\u0413\u0435\u043d\u0430","language_code":"ru"},"chat":{"id":1731469583,"first_name":"\u0413\u0435\u043d\u0430","type":"private"},"date":1624723367,"text":"secret_28062002"}}
+{"update_id":751027184,
+"message":{"message_id":97,"from":{"id":1090983827,"is_bot":false,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","language_code":"ru"},"chat":{"id":1090983827,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","type":"private"},"date":1624724770,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+{"update_id":751027185,
+"message":{"message_id":98,"from":{"id":1090983827,"is_bot":false,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","language_code":"ru"},"chat":{"id":1090983827,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","type":"private"},"date":1624724784,"text":"secret_28062002"}}
+{"update_id":751027186,
+"message":{"message_id":99,"from":{"id":1090983827,"is_bot":false,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","language_code":"ru"},"chat":{"id":1090983827,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","type":"private"},"date":1624724791,"text":"leave"}}
+{"update_id":751027187,
+"message":{"message_id":100,"from":{"id":1090983827,"is_bot":false,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","language_code":"ru"},"chat":{"id":1090983827,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","type":"private"},"date":1624724805,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+{"update_id":751027188,
+"message":{"message_id":101,"from":{"id":1090983827,"is_bot":false,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","language_code":"ru"},"chat":{"id":1090983827,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","type":"private"},"date":1624724852,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+{"update_id":751027189,
+"message":{"message_id":102,"from":{"id":1090983827,"is_bot":false,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","language_code":"ru"},"chat":{"id":1090983827,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","type":"private"},"date":1624724854,"text":"secret_28062002"}}
+{"update_id":751027190,
+"message":{"message_id":110,"from":{"id":1090983827,"is_bot":false,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","language_code":"ru"},"chat":{"id":1090983827,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","type":"private"},"date":1624725053,"text":"command_28062002"}}
+INSERT INTO users (t_id, first_name, is_bot, last_name) VALUES (1090983827, 'Денис', 0, 'Богинский'
+{"update_id":751027191,
+"message":{"message_id":120,"from":{"id":1090983827,"is_bot":false,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","language_code":"ru"},"chat":{"id":1090983827,"first_name":"\u0414\u0435\u043d\u0438\u0441","last_name":"\u0411\u043e\u0433\u0438\u043d\u0441\u043a\u0438\u0439","type":"private"},"date":1624726957,"text":"unsubscribe"}}
+{"update_id":751027192,
+"message":{"message_id":122,"from":{"id":1731469583,"is_bot":false,"first_name":"\u0413\u0435\u043d\u0430","language_code":"ru"},"chat":{"id":1731469583,"first_name":"\u0413\u0435\u043d\u0430","type":"private"},"date":1624726986,"text":"command_28062002"}}
+INSERT INTO users (t_id, first_name, is_bot, last_name) VALUES (1731469583, 'Гена', 0, NULL
+{"update_id":751027193,
+"my_chat_member":{"chat":{"id":1731469583,"first_name":"\u0413\u0435\u043d\u0430","type":"private"},"from":{"id":1731469583,"is_bot":false,"first_name":"\u0413\u0435\u043d\u0430","language_code":"ru"},"date":1624726999,"old_chat_member":{"user":{"id":1788284086,"is_bot":true,"first_name":"Avtopodbor","username":"AvtopodborOrenburgBot"},"status":"member"},"new_chat_member":{"user":{"id":1788284086,"is_bot":true,"first_name":"Avtopodbor","username":"AvtopodborOrenburgBot"},"status":"kicked","until_date":0}}}
+{"update_id":751027194,
+"message":{"message_id":124,"from":{"id":798145739,"is_bot":false,"first_name":"Ruslan","last_name":"AMG","username":"Ruslan_482"},"chat":{"id":798145739,"first_name":"Ruslan","last_name":"AMG","username":"Ruslan_482","type":"private"},"date":1624727020,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+{"update_id":751027195,
+"message":{"message_id":125,"from":{"id":798145739,"is_bot":false,"first_name":"Ruslan","last_name":"AMG","username":"Ruslan_482","language_code":"ru"},"chat":{"id":798145739,"first_name":"Ruslan","last_name":"AMG","username":"Ruslan_482","type":"private"},"date":1624727028,"text":"command_28062002"}}
+INSERT INTO users (t_id, first_name, is_bot, last_name) VALUES (798145739, 'Ruslan', 0, 'AMG'
+{"update_id":751027196,
+"message":{"message_id":127,"from":{"id":942783339,"is_bot":false,"first_name":"Shyller"},"chat":{"id":942783339,"first_name":"Shyller","type":"private"},"date":1624727063,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+{"update_id":751027197,
+"message":{"message_id":128,"from":{"id":942783339,"is_bot":false,"first_name":"Shyller","language_code":"ru"},"chat":{"id":942783339,"first_name":"Shyller","type":"private"},"date":1624727080,"text":"command_28062002"}}
+INSERT INTO users (t_id, first_name, is_bot, last_name) VALUES (942783339, 'Shyller', 0, NULL
+{"update_id":751027198,
+"message":{"message_id":139,"from":{"id":944924551,"is_bot":false,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","language_code":"en"},"chat":{"id":944924551,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","type":"private"},"date":1624736040,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}

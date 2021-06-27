@@ -127,7 +127,6 @@ main
   background-color: black
   width: 100%
   height: calc(100vh - 80px)
-  min-height: 700px
   top: 80px
   position: fixed
   color: white
@@ -220,6 +219,11 @@ main > .button-wrapper
   width: 100% 
   height: 60px
   top: 64%
+  @media (max-width: 860px)
+    top: unset
+    bottom: 100px
+    height: 50px
+    font-size: 10pt
 
 main > .button-wrapper > .details-link
   padding: 0 50px
@@ -310,6 +314,9 @@ main > .info-row
   width: 100%
   height: auto
   padding: 50px 0px 150px
+
+  @media (max-width: 780px)
+    padding-bottom: 10vw
 
 .services > .services-box > .services-box-header
   position: relative
@@ -447,13 +454,22 @@ main > .info-row
   justify-content: center
   flex-wrap: wrap
 
-  @media (max-width: 799px)
+  @media (max-width: 820px)
     flex-direction: column
     align-items: center
 
     .guarantee-box-header
       font-size: 30pt
       margin-bottom: 50px
+
+      @media (max-width: 780px)
+        font-size: 26pt
+
+      @media (max-width: 420px)
+        font-size: 23pt
+
+      @media (max-width: 350px)
+        font-size: 20pt
 
     .guarantee-list
       width: 100%
@@ -491,7 +507,6 @@ main > .info-row
   width: 100%
   display: flex
   height: 20%
-  font-size: 150%
   justify-content: center
   font-size: 40pt
   margin-bottom: 100px
@@ -507,33 +522,56 @@ main > .info-row
   align-items: center
   text-align: center
   margin: 0 40px
+  padding: 0 10px
 
   & > .guarantee-logo
-    filter: brightness(50)
     margin-bottom: 50px
     & > img
       width: 90px
 
   & > .guarantee-title
-    font-size: 20pt
+    font-size: 19pt
     margin-bottom: 20px
+    
 
+    @media (max-width: 780px)
+      font-size: 18pt
+
+    @media (max-width: 420px)
+      font-size: 16pt
+
+    @media (max-width: 350px)
+      font-size: 14pt
+
+  & > .guarantee-descr
+    font-size: 11pt
+    
+
+    @media (max-width: 780px)
+      font-size: 10.5pt
+
+    @media (max-width: 420px)
+      font-size: 10pt
+
+    @media (max-width: 350px)
+      font-size: 9pt
 
 
 
 
 .check-placer
   display: none
-  height: calc(100vh - 80px)
+  height: calc(100vh + 30vw + 150px)
   @media (min-height: 900px) and (min-width: 1000px)
     display: block
 
 .check
-  padding-top: 300px
-  padding-bottom: 100px
+  box-sizing: border-box
+  padding: 200px 30px calc(200px + 10vw)
   background: white
   position: relative
   z-index: 2
+  // color: #1c1c1c
 
   @media (max-height: 700px)
     position: relative
@@ -547,6 +585,18 @@ main > .info-row
     align-content: center
     flex-wrap: wrap
     font-size: 150%
+
+    @media (max-width: 780px)
+      font-size: 110%
+
+    @media (max-width: 420px)
+      font-size: 90%
+
+    @media (max-width: 350px)
+      font-size: 75%
+
+    @media (max-width: 320px)
+      font-size: 70%
     
   & > .check-box
     display: flex
@@ -585,14 +635,18 @@ main > .info-row
         flex-direction: column
         justify-content: center
         text-align: left
+        margin-top: 50px
         & > .check-logo
           display: flex
           align-items: center
           justify-content: flex-start
           flex-direction: row
           font-size: 16pt
-          margin-bottom: 10px
+          margin-bottom: 8px
           white-space: nowrap
+          font-weight: bold
+          & > img
+            margin-right: 15px
       & > .row-block
         position: relative
         right: 50px
@@ -605,6 +659,7 @@ main > .info-row
     z-index: 1
     height: calc(100vh - 80px)
     padding-top: 0
+    padding-bottom: 70px
 
     &.fixed
       top: 80px
@@ -624,18 +679,260 @@ main > .info-row
           text-align: right !important
       & > .check-column:nth-of-type(2n - 1)
         width: 20%
-        & > .check-block > .check-logo
-          justify-content: flex-end
+        & > .check-block 
+          margin-top: 0
+          & > .check-logo
+            justify-content: flex-end
+            & > img
 
-.auto-selection-step 
+.auto-selection-step
   position: relative
-  margin-top: 100vh
-  background: white
+  background: #404040
   z-index: 2
-  padding-bottom: 200px
+  height: 50%
+  color: white
+
+  &::before
+    display: block
+    content: ""
+    width: 220%
+    height: calc(100% + 25vw)
+    position: absolute
+    left: -60%
+    top: 50%
+    transform-origin: center center
+    transform: translateY(-50%) rotate(10deg)
+    background-color: #404040
+    z-index: -1
 
 .auto-selection-field
   box-sizing: border-box
   width: 100%
+  display: flex
   height: auto
   padding: 50px 0px 150px
+  flex-direction: column
+  align-items: center
+  & > .auto-selection-header
+    width: 100%
+    text-align: center
+    margin-bottom: 50px
+    font-size: 130%
+    
+
+    @media (max-width: 780px)
+      font-size: 110%
+
+    @media (max-width: 420px)
+      font-size: 90%
+
+    @media (max-width: 350px)
+      font-size: 75%
+
+  & > .auto-selection-main
+    display: flex
+    @media (max-width: 999px)
+      flex-direction: column
+      display: flex
+      align-items: center
+    justify-content: space-evenly
+    & > .arrow
+      display: flex
+      @media (max-width: 999px)
+        transform: rotate(90deg)
+        margin: 50px
+        
+    & > :first-of-type img
+      width: 110% !important
+
+    & > .steps
+      width: 20%
+      max-width: 270px
+      display: flex
+      text-align: center
+      align-items: center
+      flex-direction: column
+      box-shadow: 0 0 25px #000a
+      background: #eee5
+      border-radius: 10px
+      padding: 30px 10px 20px
+      @media (max-width: 999px)
+        width: 80%
+        text-align: center
+
+
+      & > .logo
+        display: flex
+        justify-content: center
+        align-items: center
+        // border: 5px solid #8f8f8f
+        border-radius: 50%
+        width: 100px
+        height: 100px
+        padding: 15px
+        background-color: white
+        margin-bottom: 40px
+        box-shadow: 0 0 30px 0 #00000055
+        box-sizing: border-box
+
+        & > img
+          width: 100%
+          filter: grayscale(1) brightness(1)
+
+.risks
+  position: relative
+  background: white
+  z-index: 2
+  & > .risks-box
+    padding: 0 20px
+    height: 100%
+    text-align: -webkit-center
+    & > .risks-header
+      width: 100%
+      padding: 50px 0
+      text-align: center
+      font-size: 42px
+      font-weight: bold
+      @media (max-width: 1000px)
+        font-size: 36px
+      @media (max-width: 830px)
+        font-size: 30px
+      @media (max-width: 500px)
+        font-size: 25px
+      @media (max-width: 430px)
+        font-size: 20px
+      @media (max-width: 330px)
+        font-size: 17px
+
+    
+    @media (max-width: 330px)
+      & > .risks-main > .risks-content
+        font-size: 10pt !important
+
+    & > .risks-main
+      width: 100%
+      padding-bottom: 30px
+      & > .risks-content
+        display: flex
+        text-align: initial
+        align-items: center
+        margin-bottom: 30px
+        width: 100%
+        max-width: 650px
+        background: #eee
+        padding: 7px 10px 7px 15px
+        box-sizing: border-box
+        border-radius: 7px
+        box-shadow: 0 0 10px 0 #0004
+        font-size: 12pt
+        min-height: 50px
+
+        & > .risks-number
+          border-radius: 50%
+          width: 7px
+          height: 7px
+          background: #4caf50
+          flex-shrink: 0
+            
+        & > .risks-info
+          display: flex
+          padding-left: 25px
+          align-items: center
+          @media (max-width: 960px)
+            font-size: 18px
+          @media (max-width: 620px)
+            font-size: 14px !important
+          @media (max-width: 450px)
+            font-size: 12px
+
+.query-form
+  box-sizing: border-box
+  position: relative
+  width: 100%
+  padding: 100px 20px 150px
+
+  background: #4caf50
+  z-index: 3
+  
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  & > form
+    box-sizing: border-box
+    width: 100%
+    max-width: 500px
+    padding: 20px 20px
+    background: white
+    box-shadow: 0 0 20px 0 #2228
+    border-radius: 7px
+
+    & > .query-title
+      color: #1C1C1C
+      font-size: 2rem
+      text-align: center
+      margin-bottom: 30px
+      position: relative
+  
+      @media (min-width: 780px)
+        &::after
+          content: ''
+          position: absolute
+          left: 20px
+          width: calc(100% - 40px)
+          height: 1px
+          background: #CCC
+          bottom: -7px
+
+      @media (max-width: 420px)
+        font-size: 1.5rem
+        font-weight: bold
+
+    & > .input-wrapper
+      & > input, & > .confirm
+        appearance: none
+        box-sizing: border-box
+        background: #eee
+        width: 100%
+        height: 50px
+        margin-bottom: 20px
+        border: none
+        padding: 0 20px
+        font-size: 1rem
+        border-radius: 7px
+
+        &:focus
+          outline: none
+
+      & > .confirm
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #4caf50
+        color: white
+        font-weight: bold
+        cursor: pointer
+        &:hover
+          background: #43a047
+
+    @media (min-width: 780px)
+      max-width: 1000px
+
+      & > .input-wrapper
+        display: flex
+        justify-content: center
+
+        & > input, & > .confirm
+          max-width: 300px
+          width: 30%
+          margin: 0 10px
+
+main > footer
+  width: 100%
+  height: 50px
+  background: black
+  color: white
+  display: flex
+  justify-content: center
+  align-items: center

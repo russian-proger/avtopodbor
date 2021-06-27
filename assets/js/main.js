@@ -30,8 +30,7 @@ function updateMainFilter() {
   let he_rect = header_element.getBoundingClientRect();
   let g_rect  = guarant_element.getBoundingClientRect();
   if (window.outerHeight > 700) {
-    console.log(g_rect.bottom - he_rect.height);
-    if (ce_rect.top - 800 < window.innerHeight) {
+    if (window.scrollY > window.outerHeight) {
       check_element.classList.add("fixed");
     } else {
       check_element.classList.remove("fixed");
@@ -43,11 +42,21 @@ function addHoverDetecting() {
 
 }
 
+function handleForm() {
+  const button = document.querySelector(".query-form .confirm");
+  button.onclick = () => {
+     let name = button.previousElementSibling.previousElementSibling.value;
+     let phone = button.previousElementSibling.value;
+     fetch(`/query.php?name=${name}&phone=${phone}`);
+  }
+}
+
 function main() {
   document.getElementById("details_button").onclick = onDetailsClick;
   window.addEventListener("scroll", updateMainFilter);
 
   updateMainFilter();
+  handleForm();
 }
 
 main();

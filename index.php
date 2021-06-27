@@ -15,7 +15,7 @@
 
   <!-- Including css files -->
   <link rel="stylesheet" href="./assets/css/main-header.css">
-  <link rel="stylesheet" href="./assets/css/s_general.css?5">
+  <link rel="stylesheet" href="./assets/css/s_general.css?6">
   
 </head>
 <body>
@@ -158,17 +158,17 @@
   <div id="guarantee" class="guarantee">
     <div class="guarantee-box">
      <div class="guarantee-box-header">
-        <span>Мы гарантируем</span>
+        <span>Наши гарантии</span>
      </div>
      <div class="guarantee-list gl-lawyer">
-        <div class="guarantee-logo"><img src="/assets/media/lawyer.png" alt="lawyer"></div>
-        <div class="guarantee-title"><span>Юридическую защиту</span></div>
-        <div class="guarantee-descr"><span>Подобранный автомобиль будет полностью легален</span></div>
+        <div class="guarantee-logo"><img src="/assets/media/passport.svg" alt="passport"></div>
+        <div class="guarantee-title"><span>Техническая исправность</span></div>
+        <div class="guarantee-descr"><span>Я даю гарантии на техническое состояние автомобиля на 60 дней с момента покупки автомобиля</span></div>
      </div>
      <div class="guarantee-list gl-tech">
-        <div class="guarantee-logo"><img src="/assets/media/passport.png" alt="passport"></div>
-        <div class="guarantee-title"><span>Техническую исправность</span></div>
-        <div class="guarantee-descr"><span>Я даю гарантии на техническое состояние автомобиля на 60 дней с момента покупки автомобиля</span></div>
+        <div class="guarantee-logo"><img src="/assets/media/guarantee.svg" alt="lawyer"></div>
+        <div class="guarantee-title"><span>Юридическая защита</span></div>
+        <div class="guarantee-descr"><span>Будет подобран полностью легальный автомобиль</span></div>
      </div>
     </div>
   </div>
@@ -236,37 +236,93 @@
   <div class="auto-selection-step">
     <div class="auto-selection-field">
       <div class="auto-selection-header">
-        <h1>Как происходит подбор авто?</h1>
+        <h1>Этапы подбора авто</h1>
       </div>
       <div class="auto-selection-main">
-        <div class="phone">
-          <div class="phone-logo">
+        <div class="steps">
+          <div class="logo">
             <img src="assets\media\phone.svg">
           </div>
-          <div class="phone-info">
+          <div class="info">
             Вы звоните, эксперт консультирует вас, оговариваем все критерии подбора.
           </div>          
-        </div>&#10144;
-        <div class="machine-card">
-          <div class="machine-card-logo">
+        </div>
+        <div class="arrow">
+          <img src="assets\media\arrow.svg">
+        </div>
+        <div class="steps">
+          <div class="logo">
             <img src="assets\media\machine_card.svg">
           </div>         
-          <div class="machine-card-info">
+          <div class="info">
             Проверяем все возможные варианты и ищем самый лучший.
           </div> 
-        </div>&#10144;
-        <div class="auto-key">
-          <div class="auto-key-logo">
+        </div>
+        <div class="arrow">
+          <img src="assets\media\arrow.svg">
+        </div>
+        <div class="steps">
+          <div class="logo">
             <img src="assets\media\wee_wee.svg">
           </div>
-          <div class="auto-key-info">
+          <div class="info">
             Смотрим выбранный авто вместе с вами, еще раз проверяем его и покупаем.
           </div>
-        </div>&#10144;
+        </div>
       </div>
     </div>
   </div>
 
-  <script src="./assets/js/main.js?2" defer></script>
+  <div class="query-form">
+    <form>
+      <div class="query-title">
+        <span>Оставьте заявку</span>
+      </div>
+
+      <div class="input-wrapper">
+        <input type="text" placeholder="Ваше имя" />
+        <input type="text" placeholder="Ваш номер" />
+        <div class="confirm">Отправить</div>
+      </div>
+    </form>
+  </div>
+
+  <div class="risks">
+    <div class="risks-box">
+      <div class="risks-header">Возможные риски при самостоятельной покупке автомобиля</div>
+      <div class="risks-main">
+        <div class="risks-content">
+          <div class="risks-number"></div>
+          <div class="risks-info">Краденые автомобили</div>
+        </div>
+        <div class="risks-content">
+          <div class="risks-number"></div>
+          <div class="risks-info">Обман относительно возраста и пробега</div>
+        </div>
+        <div class="risks-content">
+          <div class="risks-number"></div>
+          <div class="risks-info">Обманки вместо настоящих подушек безопасности</div>
+        </div>
+        <div class="risks-content">
+          <div class="risks-number"></div>
+          <div class="risks-info">Автомобили, восстановленные после ДТП без указания этого факта, или выполненного некачественно, специально для продажи</div>
+        </div>
+        <div class="risks-content">
+          <div class="risks-number"></div>
+          <div class="risks-info">Автомобили двойники с перебитыми номерными знаками и криминальными документами</div>
+        </div>
+        <div class="risks-content">
+          <div class="risks-number"></div>
+          <div class="risks-info">Автомобили с юридическими проблемами: большое количество собственников, многократные перепродажи, нахождение автомобиля в розыске ГИБДД, не выплаченный кредит, ограничение регистрационных действий</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <span>Оренбург 2021</span>
+  </footer>
+
+  <script src="./assets/js/main.js?2"></script>
 </body>
 </html>
