@@ -1,4 +1,17 @@
-@import "colors.css";
+@font-face
+  font-family: 'Roboto'
+  font-style: normal
+  font-weight: 400
+  font-display: swap
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('woff2')
+
+@font-face
+  font-family: 'Roboto'
+  font-style: normal
+  font-weight: 700
+  font-display: swap
+  src: url(/assets/fonts/Roboto-Bold.ttf) format('woff2')
+
 
 html
   background: white
@@ -59,12 +72,13 @@ header.main-header
 
     img
       width: 150px
-      transform: translateY(-40px)
+      transform: translateY(-27px)
       @media (max-width: 1100px)
         width: 125px
-        transform: translateY(-30px)
+        // transform: translateY(-30px)
 
       @media (max-width: 780px)
+        transform: translateY(-40px)
         width: 100px
 
   .top-center-cell
@@ -179,7 +193,7 @@ main
 main > .background-car 
   position: absolute
   width: 100%
-  background-image: url('/assets/media/background-car.png')
+  background-image: url('/assets/media/background-car.webp')
   background-position: center center
   background-size: contain
   background-repeat: no-repeat
@@ -738,6 +752,7 @@ main > .info-row
     justify-content: space-evenly
     & > .arrow
       display: flex
+      align-items: center
       @media (max-width: 999px)
         transform: rotate(90deg)
         margin: 50px
@@ -890,20 +905,35 @@ main > .info-row
         font-weight: bold
 
     & > .input-wrapper
-      & > input, & > .confirm
+      & > .input > input, & > .confirm
         appearance: none
         box-sizing: border-box
         background: #eee
         width: 100%
         height: 50px
-        margin-bottom: 20px
         border: none
-        padding: 0 20px
         font-size: 1rem
+        padding: 0 20px
         border-radius: 7px
+
+      & > .input, & > .confirm
+        width: 100%
+        margin-bottom: 20px
 
         &:focus
           outline: none
+
+        &.hidden
+          display: none
+
+      & > .input
+        display: flex
+        flex-direction: column
+
+        & > .error-info
+          font-size: 10pt
+          color: red
+          margin-left: 10px
 
       & > .confirm
         display: flex
@@ -913,6 +943,8 @@ main > .info-row
         color: white
         font-weight: bold
         cursor: pointer
+        & > img
+          width: 40px
         &:hover
           background: #43a047
 
@@ -923,12 +955,14 @@ main > .info-row
         display: flex
         justify-content: center
 
-        & > input, & > .confirm
+        & > .input, & > .confirm
           max-width: 300px
           width: 30%
           margin: 0 10px
 
-main > footer
+body > footer
+  position: relative
+  z-index: 5
   width: 100%
   height: 50px
   background: black
@@ -936,3 +970,20 @@ main > footer
   display: flex
   justify-content: center
   align-items: center
+
+#popup
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background: #000a
+  opacity: 0
+  transition: all 150ms linear
+  z-index: 9999
+
+  &.hidden
+    display: none
+
+  &.show
+    opacity: 1

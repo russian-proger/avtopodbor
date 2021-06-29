@@ -6,33 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preload" as="image" href="/assets/media/background-car.webp" />
+
   <!-- Title of the page -->
   <title>Автоподбор Оренбург</title>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
   <!-- Including css files -->
-  <link rel="stylesheet" href="./assets/css/main-header.css">
-  <link rel="stylesheet" href="./assets/css/s_general.css?6">
-  
+  <link rel="stylesheet" href="./assets/css/s_general.css?8">
 </head>
 <body>
   <!-- Main header -->
   <header class="main-header">
     <div class="top-left-cell">
       <div class="left-cell-logo">
-        <img src="/assets/media/avto-logo.svg" alt="logo">
+        <img width="125" height="125" src="/assets/media/avto-logo.svg" alt="logo">
       </div>
     </div>
     <div class="top-center-cell" >
       <a href="tel://89228427279">+7 (922) 842-72-79</a>
     </div>
     <nav class="top-right-cell">
-      <span class="nav-item">Услуги</span>
-      <span class="nav-item">Гарантии</span>
-      <span class="nav-item">Обо мне</span>
+      <span class="nav-item">Оренбург</span>
     </nav>
   </header>
   
@@ -161,12 +155,12 @@
         <span>Наши гарантии</span>
      </div>
      <div class="guarantee-list gl-lawyer">
-        <div class="guarantee-logo"><img src="/assets/media/passport.svg" alt="passport"></div>
+        <div class="guarantee-logo"><img width="133" height="133" src="/assets/media/passport.svg" alt="passport"></div>
         <div class="guarantee-title"><span>Техническая исправность</span></div>
         <div class="guarantee-descr"><span>Я даю гарантии на техническое состояние автомобиля на 60 дней с момента покупки автомобиля</span></div>
      </div>
      <div class="guarantee-list gl-tech">
-        <div class="guarantee-logo"><img src="/assets/media/guarantee.svg" alt="lawyer"></div>
+        <div class="guarantee-logo"><img width="133" height="133" src="/assets/media/guarantee.svg" alt="lawyer"></div>
         <div class="guarantee-title"><span>Юридическая защита</span></div>
         <div class="guarantee-descr"><span>Будет подобран полностью легальный автомобиль</span></div>
      </div>
@@ -204,7 +198,7 @@
         </div>
       </div>
       <div class="check-column">
-        <img src="https://clipartion.com/wp-content/uploads/2016/04/clip-art-race-car.png">
+        <img width="550" height="322" src="assets/media/race-car.webp">
       </div>
       <div class="check-column">
         <div class="check-block">
@@ -241,29 +235,29 @@
       <div class="auto-selection-main">
         <div class="steps">
           <div class="logo">
-            <img src="assets\media\phone.svg">
+            <img width="70" height="70" src="assets\media\phone.svg">
           </div>
           <div class="info">
             Вы звоните, эксперт консультирует вас, оговариваем все критерии подбора.
           </div>          
         </div>
         <div class="arrow">
-          <img src="assets\media\arrow.svg">
+          <img width="80" height="40" src="assets/media/arrow.svg">
         </div>
         <div class="steps">
           <div class="logo">
-            <img src="assets\media\machine_card.svg">
+            <img width="70" height="70" src="assets/media/machine_card.svg">
           </div>         
           <div class="info">
             Проверяем все возможные варианты и ищем самый лучший.
           </div> 
         </div>
         <div class="arrow">
-          <img src="assets\media\arrow.svg">
+          <img width="80" height="40" src="assets\media\arrow.svg">
         </div>
         <div class="steps">
           <div class="logo">
-            <img src="assets\media\wee_wee.svg">
+            <img width="70" height="70" src="assets\media\wee_wee.svg">
           </div>
           <div class="info">
             Смотрим выбранный авто вместе с вами, еще раз проверяем его и покупаем.
@@ -280,9 +274,16 @@
       </div>
 
       <div class="input-wrapper">
-        <input type="text" placeholder="Ваше имя" />
-        <input type="text" placeholder="Ваш номер" />
-        <div class="confirm">Отправить</div>
+        <div class="input">
+          <input id="query_input_name" type="text" placeholder="Ваше имя" />
+          <span class="error-info"></span>
+        </div>
+        <div class="input">
+          <input id="query_input_phone" type="text" placeholder="Ваш номер" />
+          <span class="error-info"></span>
+        </div>
+        <div id="query_text_send" class="confirm">Отправить</div>
+        <div id="query_preload_send" class="confirm hidden"><img src="/assets/media/preloader.svg" /></div>
       </div>
     </form>
   </div>
@@ -322,6 +323,21 @@
   <footer>
     <span>Оренбург 2021</span>
   </footer>
+
+  <div id="popup" class="hidden">
+    <div class="popup-success-query">
+      <div class="title">
+        <span>Ваша заявка успешно отправлена</span>
+      </div>
+      <div class="content">
+        <span>Скоро с вами свяжется специалист</span>
+      </div>
+      <div class="button-list">
+        <div class="button access-button close-button">Хорошо</div>
+      </div>
+    </div>
+    <div class="popup-error-query"></div>
+  </div>
 
   <script src="./assets/js/main.js?2"></script>
 </body>
