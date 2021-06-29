@@ -87,27 +87,15 @@ header.main-header {
       color: white; }
   .main-header nav.top-right-cell {
     display: flex;
-    width: fit-content;
+    width: 310px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-content: center; }
     .main-header nav.top-right-cell > .nav-item {
       position: relative;
       margin-right: 15px;
       cursor: pointer; }
-      .main-header nav.top-right-cell > .nav-item::after {
-        content: '';
-        position: absolute;
-        width: 0px;
-        height: 3px;
-        background: #eee;
-        bottom: -8px;
-        left: 0;
-        transition: width .2s ease-out .1s; }
-      .main-header nav.top-right-cell > .nav-item:hover::after {
-        width: 100%;
-        background: #eee; }
     @media (max-width: 1000px) {
       .main-header nav.top-right-cell {
         display: none; } }
@@ -887,8 +875,57 @@ body > footer {
   background: #000a;
   opacity: 0;
   transition: all 150ms linear;
-  z-index: 9999; }
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   #popup.hidden {
     display: none; }
   #popup.show {
     opacity: 1; }
+  #popup > .popup-window {
+    position: relative;
+    box-sizing: border-box;
+    width: 320px;
+    padding: 15px 20px 75px;
+    background: white;
+    border-radius: 7px; }
+    #popup > .popup-window.hidden {
+      display: none; }
+    #popup > .popup-window > .title {
+      display: flex;
+      width: 100%;
+      padding-bottom: 10px;
+      justify-content: center;
+      font-size: 12pt;
+      margin-bottom: 20px;
+      text-align: center;
+      border-bottom: 1px solid #e5e5e5; }
+    #popup > .popup-window > .content {
+      font-size: 10pt;
+      text-align: center; }
+    #popup > .popup-window > .button-list {
+      position: absolute;
+      left: 0;
+      bottom: 10px;
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: center; }
+      #popup > .popup-window > .button-list > .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        width: 80px;
+        height: 100%;
+        cursor: pointer;
+        transition: all 75ms ease-in-out;
+        text-align: center; }
+        #popup > .popup-window > .button-list > .button.access-button {
+          background: #4caf50;
+          color: white; }
+          #popup > .popup-window > .button-list > .button.access-button:hover {
+            background: #43a047; }
+          #popup > .popup-window > .button-list > .button.access-button:active {
+            background: #388e3c; }

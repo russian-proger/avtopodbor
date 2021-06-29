@@ -5,14 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Автоподбор оренбург, автоподбор в Оренбурге, проверенные автомобили">
+  <meta name="description" content="Предоставляем услуги автоподбора в Оренбурге. Свяжитесь с нами напрямую">
 
-  <link rel="preload" as="image" href="/assets/media/background-car.webp" />
+  <link rel="preload" as="image" href="/assets/media/background-car.webp"/>
 
   <!-- Title of the page -->
-  <title>Автоподбор Оренбург</title>
+  <title>Автоподбор Оренбург | Берите проверенные авто </title>
 
   <!-- Including css files -->
-  <link rel="stylesheet" href="./assets/css/s_general.css?8">
+  <link rel="stylesheet" href="assets/css/s_general.css?8">
 </head>
 <body>
   <!-- Main header -->
@@ -32,36 +34,12 @@
   
   <!-- First section -->
   <main>
-    <div class="background-car"></div>
+    <div class="background-car" data-bg="/assets/media/background-car.png" data-bg-webp="/assets/media/background-car.webp"></div>
     <div class="title">
       <h1>Помогаем выбрать автомобиль</h1>
     </div>
     <div class = "button-wrapper">
       <a id="details_button" class="details-link"><h3>Подробнее</h3></a>
-    </div>
-    <div class="info-row">
-      <div class="info-box left-box">
-        <div class="box-content">
-          <span class="number">5</span>
-          <span class="description">лет успешной работы</span>
-        </div>
-        <div class="box-line-1"></div>
-        <div class="box-line-2"></div>
-      </div>
-      <div class="info-box center-box">
-        <div class="box-content">
-          <span class="number">1 532</span>
-          <span class="description">автомобилей проверено</span>
-        </div>
-      </div>
-      <div class="info-box right-box">
-        <div class="box-line-2"></div>
-        <div class="box-line-1"></div>
-        <div class="box-content">
-          <span class="number">75</span>
-          <span class="description">людей воспользовались нашими услугами</span>
-        </div>
-      </div>
     </div>
     <div class="arrows-up">
       <div class="arrow arrow-1"></div>
@@ -71,7 +49,7 @@
   </main>
 
   <!-- Service section -->
-  <div id="services" class="services">
+  <section id="services" class="services">
     <div class="services-box">
       <div class = "services-box-header">
         <span type = "description" id = "services" >Наши услуги</span>
@@ -145,11 +123,11 @@
          </div>
       </div>
     </div>
-  </div>
+  </section>
 
 
   <!-- Guarantee section -->
-  <div id="guarantee" class="guarantee">
+  <section id="guarantee" class="guarantee">
     <div class="guarantee-box">
      <div class="guarantee-box-header">
         <span>Наши гарантии</span>
@@ -165,11 +143,11 @@
         <div class="guarantee-descr"><span>Будет подобран полностью легальный автомобиль</span></div>
      </div>
     </div>
-  </div>
+  </section>
 
   <div class="check-placer"></div>
   <!-- Check section -->
-  <div class="check">
+  <section class="check">
     <div class="check-header">
       <h1>Что мы проверяем</h1>
     </div>
@@ -224,10 +202,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- AUTO SELECTION STEPS -->
-  <div class="auto-selection-step">
+  <section class="auto-selection-step">
     <div class="auto-selection-field">
       <div class="auto-selection-header">
         <h1>Этапы подбора авто</h1>
@@ -265,9 +243,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="query-form">
+  <section class="query-form">
     <form>
       <div class="query-title">
         <span>Оставьте заявку</span>
@@ -279,16 +257,16 @@
           <span class="error-info"></span>
         </div>
         <div class="input">
-          <input id="query_input_phone" type="text" placeholder="Ваш номер" />
+          <input id="query_input_phone" type="tel" placeholder="Ваш номер" value="+7 (___) ___-__-__" />
           <span class="error-info"></span>
         </div>
         <div id="query_text_send" class="confirm">Отправить</div>
         <div id="query_preload_send" class="confirm hidden"><img src="/assets/media/preloader.svg" /></div>
       </div>
     </form>
-  </div>
+  </section>
 
-  <div class="risks">
+  <section class="risks">
     <div class="risks-box">
       <div class="risks-header">Возможные риски при самостоятельной покупке автомобиля</div>
       <div class="risks-main">
@@ -318,16 +296,16 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <footer>
     <span>Оренбург 2021</span>
   </footer>
 
-  <div id="popup" class="hidden">
-    <div class="popup-success-query">
+  <article id="popup" class="hidden">
+    <div class="popup-window popup-success-query">
       <div class="title">
-        <span>Ваша заявка успешно отправлена</span>
+        <span>Ваша заявка успешно отправлена!</span>
       </div>
       <div class="content">
         <span>Скоро с вами свяжется специалист</span>
@@ -336,9 +314,19 @@
         <div class="button access-button close-button">Хорошо</div>
       </div>
     </div>
-    <div class="popup-error-query"></div>
-  </div>
+    <div class="popup-window popup-error-query">
+      <div class="title">
+        <span>Упс, что-то пошло не так :(</span>
+      </div>
+      <div class="content">
+        <span>Попробуйте попробовать ещё раз, или свяжитесь со специалистом напрямую по номеру <a href="tel://89228427279">+7 (922) 842-72-79</a></span>
+      </div>
+      <div class="button-list">
+        <div class="button access-button close-button">Хорошо</div>
+      </div>
+    </div>
+  </article>
 
-  <script src="./assets/js/main.js?2"></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

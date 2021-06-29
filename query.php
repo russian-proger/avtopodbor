@@ -10,5 +10,4 @@ sendMessage("
 ");
 
 
-throw 501;
 ?>
