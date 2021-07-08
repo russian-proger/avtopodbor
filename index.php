@@ -5,13 +5,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="Автоподбор оренбург, автоподбор в Оренбурге, проверенные автомобили">
+  <meta name="keywords" content="Автоподбор оренбург, автоподбор в Оренбурге, автоподбор, проверенные автомобили">
   <meta name="description" content="Предоставляем услуги автоподбора в Оренбурге. Свяжитесь с нами напрямую">
-
-  <link rel="preload" as="image" href="/assets/media/background-car.webp"/>
 
   <!-- Title of the page -->
   <title>Автоподбор Оренбург | Берите проверенные авто </title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTY39FK11C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LTY39FK11C');
+  </script>
 
   <!-- Including css files -->
   <link rel="stylesheet" href="assets/css/s_general.css?8">
@@ -320,6 +328,28 @@
       </div>
       <div class="content">
         <span>Попробуйте попробовать ещё раз, или свяжитесь со специалистом напрямую по номеру <a href="tel://89228427279">+7 (922) 842-72-79</a></span>
+      </div>
+      <div class="button-list">
+        <div class="button access-button close-button">Хорошо</div>
+      </div>
+    </div>
+    <div class="popup-window popup-form">
+      <div class="title">
+        <span>Форма заявки</span>
+      </div>
+      <div class="content">
+        <div class="input-wrapper">
+          <div class="input query_input_name">
+            <input type="text" placeholder="Ваше имя" />
+            <span class="error-info"></span>
+          </div>
+          <div class="input query_input_phone">
+            <input type="tel" placeholder="Ваш номер" value="+7 (___) ___-__-__" />
+            <span class="error-info"></span>
+          </div>
+          <div class="query_text_send confirm">Отправить</div>
+          <div class="query_preload_send confirm hidden"><img src="/assets/media/preloader.svg" /></div>
+        </div>
       </div>
       <div class="button-list">
         <div class="button access-button close-button">Хорошо</div>

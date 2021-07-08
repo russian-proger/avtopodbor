@@ -152,6 +152,7 @@ function handleServices() {
   [].forEach.call(document.querySelectorAll(".services .order-button"), button => {
     button.onclick = () => {
       console.log(button.parentElement.querySelector(".field-title").textContent.trim());
+      openPopup("popup-form");
     }
   })
 }

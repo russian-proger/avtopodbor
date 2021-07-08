@@ -36,3 +36,5 @@ INSERT INTO users (t_id, first_name, is_bot, last_name) VALUES (798145739, 'Rusl
 INSERT INTO users (t_id, first_name, is_bot, last_name) VALUES (942783339, 'Shyller', 0, NULL
 {"update_id":751027198,
 "message":{"message_id":139,"from":{"id":944924551,"is_bot":false,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","language_code":"en"},"chat":{"id":944924551,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","type":"private"},"date":1624736040,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
+{"update_id":751027199,
+"my_chat_member":{"chat":{"id":798145739,"first_name":"Ruslan","last_name":"AMG","username":"Ruslan_482","type":"private"},"from":{"id":798145739,"is_bot":false,"first_name":"Ruslan","last_name":"AMG","username":"Ruslan_482","language_code":"ru"},"date":1625522348,"old_chat_member":{"user":{"id":1788284086,"is_bot":true,"first_name":"Avtopodbor","username":"AvtopodborOrenburgBot"},"status":"member"},"new_chat_member":{"user":{"id":1788284086,"is_bot":true,"first_name":"Avtopodbor","username":"AvtopodborOrenburgBot"},"status":"kicked","until_date":0}}}

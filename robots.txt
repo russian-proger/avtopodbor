@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Allow: /*.xml
+Allow: /*.text
+Allow: /assets/css/*.css
+Allow: /assets/fonts/*.ttf
+Allow: /assets/media/*.svg
+Allow: /assets/media/*.webp
+Allow: /assets/js/*.js
+Allow: /*.ico
+Allow: /*.js
+Allow: /*.css
+Allow: /*.svg
+Allow: /*.webp
+Allow: /*.ttf
+Sitemap: https://avtopodbor-orenburg.ru/sitemap.xml
