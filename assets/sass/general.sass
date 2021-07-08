@@ -845,8 +845,9 @@ main > .info-row
             font-size: 14px !important
           @media (max-width: 450px)
             font-size: 12px
+  
 
-.query-form
+.query-section
   box-sizing: border-box
   position: relative
   width: 100%
@@ -860,80 +861,8 @@ main > .info-row
   justify-content: center
   align-items: center
 
-  & > form
-    box-sizing: border-box
-    width: 100%
-    max-width: 500px
-    padding: 20px 20px
-    background: white
-    box-shadow: 0 0 20px 0 #2228
-    border-radius: 7px
 
-    & > .query-title
-      color: #1C1C1C
-      font-size: 2rem
-      text-align: center
-      margin-bottom: 30px
-      position: relative
-  
-      @media (min-width: 780px)
-        &::after
-          content: ''
-          position: absolute
-          left: 20px
-          width: calc(100% - 40px)
-          height: 1px
-          background: #CCC
-          bottom: -7px
-
-      @media (max-width: 420px)
-        font-size: 1.5rem
-        font-weight: bold
-
-    & > .input-wrapper
-      & > .input > input, & > .confirm
-        appearance: none
-        box-sizing: border-box
-        background: #eee
-        width: 100%
-        height: 50px
-        border: none
-        font-size: 1rem
-        padding: 0 20px
-        border-radius: 7px
-
-      & > .input, & > .confirm
-        width: 100%
-        margin-bottom: 20px
-
-        &:focus
-          outline: none
-
-        &.hidden
-          display: none
-
-      & > .input
-        display: flex
-        flex-direction: column
-
-        & > .error-info
-          font-size: 10pt
-          color: red
-          margin-left: 10px
-
-      & > .confirm
-        display: flex
-        justify-content: center
-        align-items: center
-        background: #4caf50
-        color: white
-        font-weight: bold
-        cursor: pointer
-        & > img
-          width: 40px
-        &:hover
-          background: #43a047
-
+  & > .query-form
     @media (min-width: 780px)
       max-width: 1000px
 
@@ -945,6 +874,80 @@ main > .info-row
           max-width: 300px
           width: 30%
           margin: 0 10px
+
+.query-form
+  box-sizing: border-box
+  width: 100%
+  max-width: 500px
+  padding: 20px 20px
+  background: white
+  box-shadow: 0 0 20px 0 #2228
+  border-radius: 7px
+
+  & > .query-title
+    color: #1C1C1C
+    font-size: 2rem
+    text-align: center
+    margin-bottom: 30px
+    position: relative
+
+    @media (min-width: 780px)
+      &::after
+        content: ''
+        position: absolute
+        left: 20px
+        width: calc(100% - 40px)
+        height: 1px
+        background: #CCC
+        bottom: -7px
+
+    @media (max-width: 420px)
+      font-size: 1.5rem
+      font-weight: bold
+
+  & > .input-wrapper
+    & > .input > input, & > .confirm
+      appearance: none
+      box-sizing: border-box
+      background: #eee
+      width: 100%
+      height: 50px
+      border: none
+      font-size: 1rem
+      padding: 0 20px
+      border-radius: 7px
+
+    & > .input, & > .confirm
+      width: 100%
+      margin-bottom: 20px
+
+      &:focus
+        outline: none
+
+      &.hidden
+        display: none
+
+    & > .input
+      display: flex
+      flex-direction: column
+
+      & > .error-info
+        font-size: 10pt
+        color: red
+        margin-left: 10px
+
+    & > .confirm
+      display: flex
+      justify-content: center
+      align-items: center
+      background: #4caf50
+      color: white
+      font-weight: bold
+      cursor: pointer
+      & > img
+        width: 40px
+      &:hover
+        background: #43a047
 
 body > footer
   position: relative
@@ -1022,7 +1025,8 @@ body > footer
         justify-content: center
         align-items: center
         border-radius: 7px
-        width: 80px
+        min-width: 80px
+        padding: 0 10px
         height: 100%
         cursor: pointer
         transition: all 75ms ease-in-out
@@ -1037,3 +1041,22 @@ body > footer
 
           &:active
             background: #388e3c
+
+        &.cancel-button
+          color: white
+          background: #9e9e9e
+
+          &:hover
+            background: #858585
+
+          &:active
+            background: #757575
+
+#popup > .popup-form
+  & > .content
+    & > .query-form
+      padding: 0
+      box-shadow: none
+
+      .confirm
+        margin-bottom: 0

@@ -80,11 +80,11 @@ function makePhoneInput(el) {
   return () => ({ phone });
 }
 
-function handleForm() {
-  const t_button    = document.getElementById("query_text_send");
-  const i_button    = document.getElementById("query_preload_send");
-  const name_input  = document.getElementById("query_input_name");
-  const phone_input = document.getElementById("query_input_phone");
+function handleForm(form) {
+  const t_button    = form.querySelector(".query_text_send");
+  const i_button    = form.querySelector(".query_preload_send");
+  const name_input  = form.querySelector(".query_input_name > input");
+  const phone_input = form.querySelector(".query_input_phone > input");
   /** @type {HTMLInputElement} */
 
   
@@ -152,7 +152,7 @@ function handleServices() {
   [].forEach.call(document.querySelectorAll(".services .order-button"), button => {
     button.onclick = () => {
       console.log(button.parentElement.querySelector(".field-title").textContent.trim());
-      openPopup("popup-form");
+      openPopup(".popup-form");
     }
   })
 }
@@ -220,7 +220,8 @@ function main() {
   updateMainFilter();
   handlePopup();
   handleServices();
-  handleForm();
+
+  document.querySelectorAll(".query-form").forEach(v => handleForm(v))
 }
 
 main();

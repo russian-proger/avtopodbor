@@ -253,23 +253,23 @@
     </div>
   </section>
 
-  <section class="query-form">
-    <form>
+  <section class="query-section">
+    <form class="query-form">
       <div class="query-title">
         <span>Оставьте заявку</span>
       </div>
 
       <div class="input-wrapper">
-        <div class="input">
-          <input id="query_input_name" type="text" placeholder="Ваше имя" />
+        <div class="input query_input_name">
+          <input type="text" placeholder="Ваше имя" />
           <span class="error-info"></span>
         </div>
-        <div class="input">
-          <input id="query_input_phone" type="tel" placeholder="Ваш номер" value="+7 (___) ___-__-__" />
+        <div class="input query_input_phone">
+          <input type="tel" placeholder="Ваш номер" value="+7 (___) ___-__-__" />
           <span class="error-info"></span>
         </div>
-        <div id="query_text_send" class="confirm">Отправить</div>
-        <div id="query_preload_send" class="confirm hidden"><img src="/assets/media/preloader.svg" /></div>
+        <div class="query_text_send confirm">Отправить</div>
+        <div class="query_preload_send confirm hidden"><img src="/assets/media/preloader.svg" /></div>
       </div>
     </form>
   </section>
@@ -334,26 +334,28 @@
       </div>
     </div>
     <div class="popup-window popup-form">
-      <div class="title">
-        <span>Форма заявки</span>
-      </div>
-      <div class="content">
-        <div class="input-wrapper">
-          <div class="input query_input_name">
-            <input type="text" placeholder="Ваше имя" />
-            <span class="error-info"></span>
-          </div>
-          <div class="input query_input_phone">
-            <input type="tel" placeholder="Ваш номер" value="+7 (___) ___-__-__" />
-            <span class="error-info"></span>
-          </div>
-          <div class="query_text_send confirm">Отправить</div>
-          <div class="query_preload_send confirm hidden"><img src="/assets/media/preloader.svg" /></div>
+        <div class="title">
+          <span>Форма заявки</span>
         </div>
-      </div>
-      <div class="button-list">
-        <div class="button access-button close-button">Хорошо</div>
-      </div>
+        <div class="content">
+          <form class="query-form">
+            <div class="input-wrapper">
+              <div class="input query_input_name">
+                <input type="text" placeholder="Ваше имя" />
+                <span class="error-info"></span>
+              </div>
+              <div class="input query_input_phone">
+                <input type="tel" placeholder="Ваш номер" value="+7 (___) ___-__-__" />
+                <span class="error-info"></span>
+              </div>
+              <div class="query_text_send confirm">Отправить</div>
+              <div class="query_preload_send confirm hidden"><img src="/assets/media/preloader.svg" /></div>
+            </div>
+          </form>
+        </div>
+        <div class="button-list">
+          <div class="button cancel-button close-button">Отменить</div>
+        </div>
     </div>
   </article>
 

@@ -770,7 +770,7 @@ main > .info-row {
             .risks > .risks-box > .risks-main > .risks-content > .risks-info {
               font-size: 12px; } }
 
-.query-form {
+.query-section {
   box-sizing: border-box;
   position: relative;
   width: 100%;
@@ -781,79 +781,80 @@ main > .info-row {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .query-form > form {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 500px;
-    padding: 20px 20px;
-    background: white;
-    box-shadow: 0 0 20px 0 #2228;
-    border-radius: 7px; }
-    .query-form > form > .query-title {
-      color: #1C1C1C;
-      font-size: 2rem;
-      text-align: center;
-      margin-bottom: 30px;
-      position: relative; }
-      @media (min-width: 780px) {
-        .query-form > form > .query-title::after {
-          content: '';
-          position: absolute;
-          left: 20px;
-          width: calc(100% - 40px);
-          height: 1px;
-          background: #CCC;
-          bottom: -7px; } }
-      @media (max-width: 420px) {
-        .query-form > form > .query-title {
-          font-size: 1.5rem;
-          font-weight: bold; } }
-    .query-form > form > .input-wrapper > .input > input, .query-form > form > .input-wrapper > .confirm {
-      appearance: none;
-      box-sizing: border-box;
-      background: #eee;
-      width: 100%;
-      height: 50px;
-      border: none;
-      font-size: 1rem;
-      padding: 0 20px;
-      border-radius: 7px; }
-    .query-form > form > .input-wrapper > .input, .query-form > form > .input-wrapper > .confirm {
-      width: 100%;
-      margin-bottom: 20px; }
-      .query-form > form > .input-wrapper > .input:focus, .query-form > form > .input-wrapper > .confirm:focus {
-        outline: none; }
-      .query-form > form > .input-wrapper > .input.hidden, .query-form > form > .input-wrapper > .confirm.hidden {
-        display: none; }
-    .query-form > form > .input-wrapper > .input {
-      display: flex;
-      flex-direction: column; }
-      .query-form > form > .input-wrapper > .input > .error-info {
-        font-size: 10pt;
-        color: red;
-        margin-left: 10px; }
-    .query-form > form > .input-wrapper > .confirm {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #4caf50;
-      color: white;
-      font-weight: bold;
-      cursor: pointer; }
-      .query-form > form > .input-wrapper > .confirm > img {
-        width: 40px; }
-      .query-form > form > .input-wrapper > .confirm:hover {
-        background: #43a047; }
+  @media (min-width: 780px) {
+    .query-section > .query-form {
+      max-width: 1000px; }
+      .query-section > .query-form > .input-wrapper {
+        display: flex;
+        justify-content: center; }
+        .query-section > .query-form > .input-wrapper > .input, .query-section > .query-form > .input-wrapper > .confirm {
+          max-width: 300px;
+          width: 30%;
+          margin: 0 10px; } }
+
+.query-form {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px 20px;
+  background: white;
+  box-shadow: 0 0 20px 0 #2228;
+  border-radius: 7px; }
+  .query-form > .query-title {
+    color: #1C1C1C;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative; }
     @media (min-width: 780px) {
-      .query-form > form {
-        max-width: 1000px; }
-        .query-form > form > .input-wrapper {
-          display: flex;
-          justify-content: center; }
-          .query-form > form > .input-wrapper > .input, .query-form > form > .input-wrapper > .confirm {
-            max-width: 300px;
-            width: 30%;
-            margin: 0 10px; } }
+      .query-form > .query-title::after {
+        content: '';
+        position: absolute;
+        left: 20px;
+        width: calc(100% - 40px);
+        height: 1px;
+        background: #CCC;
+        bottom: -7px; } }
+    @media (max-width: 420px) {
+      .query-form > .query-title {
+        font-size: 1.5rem;
+        font-weight: bold; } }
+  .query-form > .input-wrapper > .input > input, .query-form > .input-wrapper > .confirm {
+    appearance: none;
+    box-sizing: border-box;
+    background: #eee;
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 1rem;
+    padding: 0 20px;
+    border-radius: 7px; }
+  .query-form > .input-wrapper > .input, .query-form > .input-wrapper > .confirm {
+    width: 100%;
+    margin-bottom: 20px; }
+    .query-form > .input-wrapper > .input:focus, .query-form > .input-wrapper > .confirm:focus {
+      outline: none; }
+    .query-form > .input-wrapper > .input.hidden, .query-form > .input-wrapper > .confirm.hidden {
+      display: none; }
+  .query-form > .input-wrapper > .input {
+    display: flex;
+    flex-direction: column; }
+    .query-form > .input-wrapper > .input > .error-info {
+      font-size: 10pt;
+      color: red;
+      margin-left: 10px; }
+  .query-form > .input-wrapper > .confirm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer; }
+    .query-form > .input-wrapper > .confirm > img {
+      width: 40px; }
+    .query-form > .input-wrapper > .confirm:hover {
+      background: #43a047; }
 
 body > footer {
   position: relative;
@@ -890,6 +891,10 @@ body > footer {
     padding: 15px 20px 75px;
     background: white;
     border-radius: 7px; }
+    @media (max-width: 350px) {
+      #popup > .popup-window {
+        width: 100%;
+        height: 100%; } }
     #popup > .popup-window.hidden {
       display: none; }
     #popup > .popup-window > .title {
@@ -917,7 +922,8 @@ body > footer {
         justify-content: center;
         align-items: center;
         border-radius: 7px;
-        width: 80px;
+        min-width: 80px;
+        padding: 0 10px;
         height: 100%;
         cursor: pointer;
         transition: all 75ms ease-in-out;
@@ -929,3 +935,16 @@ body > footer {
             background: #43a047; }
           #popup > .popup-window > .button-list > .button.access-button:active {
             background: #388e3c; }
+        #popup > .popup-window > .button-list > .button.cancel-button {
+          color: white;
+          background: #9e9e9e; }
+          #popup > .popup-window > .button-list > .button.cancel-button:hover {
+            background: #858585; }
+          #popup > .popup-window > .button-list > .button.cancel-button:active {
+            background: #757575; }
+
+#popup > .popup-form > .content > .query-form {
+  padding: 0;
+  box-shadow: none; }
+  #popup > .popup-form > .content > .query-form .confirm {
+    margin-bottom: 0; }
