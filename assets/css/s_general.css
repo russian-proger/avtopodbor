@@ -375,7 +375,8 @@ main > .info-row {
       align-items: center;
       padding: 0 30px;
       cursor: pointer;
-      transition: all 75ms ease-in-out; }
+      transition: all 75ms ease-in-out;
+      border-radius: 5px; }
       .services-box-main > .services-field > .order-button:hover {
         background: #388e3c; }
 
