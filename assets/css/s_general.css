@@ -297,9 +297,9 @@ main > .info-row {
   @media (max-width: 780px) {
     .services > .services-box > .services-box-header {
       margin-bottom: 60px; } }
-  .services > .services-box > .services-box-header > span#services {
+  .services > .services-box > .services-box-header > h2.description {
     position: relative; }
-    .services > .services-box > .services-box-header > span#services::after {
+    .services > .services-box > .services-box-header > h2.description::after {
       position: absolute;
       content: '';
       background: black;
@@ -355,7 +355,7 @@ main > .info-row {
       height: 100%;
       flex-shrink: 2; }
       .services-box-main > .services-field > .content > .short-description {
-        color: gray;
+        color: #6d6d6d;
         font-size: 10pt;
         margin-top: 5px;
         margin-bottom: 30px; }
@@ -368,7 +368,7 @@ main > .info-row {
           margin-top: 20px; }
     .services-box-main > .services-field > .order-button {
       height: 50px;
-      background: #43a047;
+      background: #2e7d32;
       color: white;
       display: flex;
       justify-content: center;
@@ -848,7 +848,7 @@ main > .info-row {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #4caf50;
+    background: #2e7d32;
     color: white;
     font-weight: bold;
     cursor: pointer; }

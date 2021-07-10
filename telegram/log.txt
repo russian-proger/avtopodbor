@@ -38,3 +38,22 @@ INSERT INTO users (t_id, first_name, is_bot, last_name) VALUES (942783339, 'Shyl
 "message":{"message_id":139,"from":{"id":944924551,"is_bot":false,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","language_code":"en"},"chat":{"id":944924551,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","type":"private"},"date":1624736040,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
 {"update_id":751027199,
 "my_chat_member":{"chat":{"id":798145739,"first_name":"Ruslan","last_name":"AMG","username":"Ruslan_482","type":"private"},"from":{"id":798145739,"is_bot":false,"first_name":"Ruslan","last_name":"AMG","username":"Ruslan_482","language_code":"ru"},"date":1625522348,"old_chat_member":{"user":{"id":1788284086,"is_bot":true,"first_name":"Avtopodbor","username":"AvtopodborOrenburgBot"},"status":"member"},"new_chat_member":{"user":{"id":1788284086,"is_bot":true,"first_name":"Avtopodbor","username":"AvtopodborOrenburgBot"},"status":"kicked","until_date":0}}}
+{"update_id":751027200,
+"message":{"message_id":300,"from":{"id":944924551,"is_bot":false,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","language_code":"en"},"chat":{"id":944924551,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","type":"private"},"date":1625853242,"text":"Unsubscribe"}}
+{"update_id":751027201,
+"message":{"message_id":305,"from":{"id":944924551,"is_bot":false,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","language_code":"en"},"chat":{"id":944924551,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","type":"private"},"date":1625853518,"text":"J"}}
+{"update_id":751027202,
+"message":{"message_id":313,"from":{"id":944924551,"is_bot":false,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","language_code":"ru"},"chat":{"id":944924551,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","type":"private"},"date":1625890864,"text":"l"}}
+{"update_id":751027203,
+"message":{"message_id":314,"from":{"id":944924551,"is_bot":false,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","language_code":"ru"},"chat":{"id":944924551,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","type":"private"},"date":1625890869,"text":"start"}}
+{"update_id":751027204,
+"message":{"message_id":315,"from":{"id":944924551,"is_bot":false,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","language_code":"ru"},"chat":{"id":944924551,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","type":"private"},"date":1625890874,"text":"subscribe"}}
+{"update_id":751027205,
+"message":{"message_id":316,"from":{"id":944924551,"is_bot":false,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","language_code":"ru"},"chat":{"id":944924551,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","type":"private"},"date":1625890878,"text":"unsubscribe"}}
+{"update_id":751027206,
+"message":{"message_id":318,"from":{"id":944924551,"is_bot":false,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","language_code":"ru"},"chat":{"id":944924551,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","type":"private"},"date":1625890880,"text":"start"}}
+{"update_id":751027207,
+"message":{"message_id":319,"from":{"id":944924551,"is_bot":false,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","language_code":"ru"},"chat":{"id":944924551,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","type":"private"},"date":1625890883,"text":"subscribe"}}
+{"update_id":751027208,
+"message":{"message_id":320,"from":{"id":944924551,"is_bot":false,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","language_code":"ru"},"chat":{"id":944924551,"first_name":"Vadim","last_name":"Sagitov","username":"russian_proger","type":"private"},"date":1625890930,"text":"command_28062002"}}
+INSERT INTO users (t_id, first_name, is_bot, last_name) VALUES (944924551, 'Vadim', 0, 'Sagitov'

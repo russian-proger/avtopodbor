@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <!-- Meta information -->
   <meta charset="UTF-8">
@@ -9,19 +9,10 @@
   <meta name="description" content="Предоставляем услуги автоподбора в Оренбурге. Свяжитесь с нами напрямую">
 
   <!-- Title of the page -->
-  <title>Автоподбор Оренбург | Берите проверенные авто </title>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LTY39FK11C"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-LTY39FK11C');
-  </script>
+  <title>Автоподбор Оренбург 56 | Берите Проверенные Авто (От 1000 Руб.) </title>
 
   <!-- Including css files -->
+  <link rel="icon" href="https://avtopodbor-orenburg.ru/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/s_general.css?8">
 </head>
 <body>
@@ -47,7 +38,7 @@
       <h1>Помогаем выбрать автомобиль</h1>
     </div>
     <div class = "button-wrapper">
-      <a id="details_button" class="details-link"><h3>Подробнее</h3></a>
+      <a id="details_button" class="details-link"><span>Подробнее</span></a>
     </div>
     <div class="arrows-up">
       <div class="arrow arrow-1"></div>
@@ -59,20 +50,20 @@
   <!-- Service section -->
   <section id="services" class="services">
     <div class="services-box">
-      <div class = "services-box-header">
-        <span type = "description" id = "services" >Наши услуги</span>
+      <div class="services-box-header">
+        <h2 class="description" >Наши услуги</h2>
       </div>
-      <div class = "services-box-main">
+      <div class="services-box-main">
          <div class="services-field">
             <div class="field-title">
-              <span>Выездной осмотр</span>
+              <h3>Выездной осмотр</h3>
             </div>
             <div class="content">
               <div class="short-description">
                 <span>Цена зависит от класса автомобиля и сложности диагностики</span>
               </div>
               <div class="cost">
-                <span>от 1 000 Р</h1>
+                <span>от 1 000 Р</span>
               </div>
               <div class="benefits">
                 <div class="benefits-item">Тест-драйв</div>
@@ -87,14 +78,14 @@
          </div>
          <div class="services-field">
             <div class="field-title">
-              <span>Специалист на день</span>
+              <h3>Специалист на день</h3>
             </div>
             <div class="content">
               <div class="short-description">
                 <span>ГСМ оплачивается отдельно</span>
               </div>
               <div class="cost">
-                <span>от 5 000 Р</h1>
+                <span>от 5 000 Р</span>
               </div>
               <div class="benefits">
                 <div class="benefits-item">Встреча с автовладельцем</div>
@@ -109,14 +100,14 @@
          </div>
          <div class="services-field">
             <div class="field-title">
-              <span>Автоподбор под ключ</span>
+              <h3>Автоподбор под ключ</h3>
             </div>
             <div class="content">
               <div class="short-description">
                 <span>Цена зависит от класса автомобиля и сложности подбора</span>
               </div>
               <div class="cost">
-                <span>от 10 000 Р</h1>
+                <span>от 10 000 Р</span>
               </div>
               <div class="benefits">
                 <div class="benefits-item">Торг с продавцом</div>
@@ -138,7 +129,7 @@
   <section id="guarantee" class="guarantee">
     <div class="guarantee-box">
      <div class="guarantee-box-header">
-        <span>Наши гарантии</span>
+        <h2>Наши гарантии</h2>
      </div>
      <div class="guarantee-list gl-lawyer">
         <div class="guarantee-logo"><img width="133" height="133" src="/assets/media/passport.svg" alt="passport"></div>
@@ -157,53 +148,53 @@
   <!-- Check section -->
   <section class="check">
     <div class="check-header">
-      <h1>Что мы проверяем</h1>
+      <h2>Что мы проверяем</h2>
     </div>
     <div class="check-box">
       <div class="check-column">
         <div class="check-block">
           <div class = "check-logo">
-            <img src = "assets\media\car.svg" style = "width: 50px; height: 50px; padding: 5px">
+            <img src = "assets/media/car.svg" alt="машина" style="width: 50px; height: 50px; padding: 5px">
             <span class="check-title">Кузов машины</span>
           </div>
           Проверка кузова на предмет перекраса, ремонта, снятия-установки элементов.
         </div>
         <div class="check-block">
           <div class = "check-logo">
-            <img src="assets\media\engine.svg" style = "width: 50px;height: 50px;padding: 5px">
+            <img src="assets/media/engine.svg" alt="двигатель" style="width: 50px;height: 50px;padding: 5px">
             <span class="check-title">Тех. состояние</span>
           </div>
           Проверка двигателя. Проверка АКПП по данным эбу и разл. тестами. Компьютерная диагностика ост. электронных блоков управления автомобиля ( АВS, ЕSР, SRS, Air bag, блоки управления кузовом т.д.).
         </div>
         <div class="check-block">
           <div class = "check-logo">
-            <img src="assets\media\guarantee_list.svg" style = "width: 50px; height: 50px">
+            <img src="assets/media/guarantee_list.svg" alt="список гарантий" style="width: 50px; height: 50px">
             <span class="check-title">Юр. чистоту</span>
           </div>
           Криминалистическая экспертиза автомобиля. Проверка в ГИБДД и Бюро Кредитных Историй.
         </div>
       </div>
       <div class="check-column">
-        <img width="550" height="322" src="assets/media/race-car.webp">
+        <img width="550" height="322" src="assets/media/race-car.webp" alt="автомобиль">
       </div>
       <div class="check-column">
         <div class="check-block">
           <div class="check-logo">
-            <img src="assets\media\speedometr.svg" style="width: 50px; height: 50px;padding: 5px">
+            <img src="assets/media/speedometr.svg" alt="спидометр" style="width: 50px; height: 50px;padding: 5px">
             <span class="check-title">Пробег</span>
           </div>
           Проверка правильной работы бортового компьютера и его показаний.
         </div>
         <div class="check-block">
           <div class="check-logo">
-            <img src="assets\media\car_brake.svg" style="width: 50px; height: 50px;padding: 5px">
+            <img src="assets/media/car_brake.svg" alt="сломанная машина" style="width: 50px; height: 50px;padding: 5px">
             <span class="check-title">Тормоза</span>
           </div>
           Проверяем состояние тормозных механизмов, дисков, колодок, антиблокировочной, антипробуксовочной систем и антизаноса.
         </div>
         <div class="check-block">
           <div class="check-logo">
-            <img src="assets\media\wheel.svg" style="width: 50px; height: 50px;padding: 5px">
+            <img src="assets/media/wheel.svg" alt="колесо" style="width: 50px; height: 50px;padding: 5px">
             <span class="check-title">Колеса</span>
           </div>
           Равномерность износа, дата производства, состояние и марка шин.
@@ -216,34 +207,34 @@
   <section class="auto-selection-step">
     <div class="auto-selection-field">
       <div class="auto-selection-header">
-        <h1>Этапы подбора авто</h1>
+        <h2>Этапы подбора авто</h2>
       </div>
       <div class="auto-selection-main">
         <div class="steps">
           <div class="logo">
-            <img width="70" height="70" src="assets\media\phone.svg">
+            <img width="70" height="70" src="assets/media/phone.svg" alt="телефон">
           </div>
           <div class="info">
             Вы звоните, эксперт консультирует вас, оговариваем все критерии подбора.
           </div>          
         </div>
         <div class="arrow">
-          <img width="80" height="40" src="assets/media/arrow.svg">
+          <img width="80" height="40" src="assets/media/arrow.svg" alt="стрелка">
         </div>
         <div class="steps">
           <div class="logo">
-            <img width="70" height="70" src="assets/media/machine_card.svg">
+            <img width="70" height="70" src="assets/media/machine_card.svg" alt="водительское удостоверение">
           </div>         
           <div class="info">
             Проверяем все возможные варианты и ищем самый лучший.
           </div> 
         </div>
         <div class="arrow">
-          <img width="80" height="40" src="assets\media\arrow.svg">
+          <img width="80" height="40" src="assets/media/arrow.svg" alt="стрелка">
         </div>
         <div class="steps">
           <div class="logo">
-            <img width="70" height="70" src="assets\media\wee_wee.svg">
+            <img width="70" height="70" src="assets/media/wee_wee.svg" alt="машина под ключ">
           </div>
           <div class="info">
             Смотрим выбранный авто вместе с вами, еще раз проверяем его и покупаем.
@@ -256,7 +247,7 @@
   <section class="query-section">
     <form class="query-form">
       <div class="query-title">
-        <span>Оставьте заявку</span>
+        <h2>Оставьте заявку</h2>
       </div>
 
       <div class="input-wrapper">
@@ -269,14 +260,16 @@
           <span class="error-info"></span>
         </div>
         <div class="query_text_send confirm">Отправить</div>
-        <div class="query_preload_send confirm hidden"><img src="/assets/media/preloader.svg" /></div>
+        <div class="query_preload_send confirm hidden"><img src="/assets/media/preloader.svg" alt="загрузка" /></div>
       </div>
     </form>
   </section>
 
   <section class="risks">
     <div class="risks-box">
-      <div class="risks-header">Возможные риски при самостоятельной покупке автомобиля</div>
+      <div class="risks-header">
+        <h2>Возможные риски при самостоятельной покупке автомобиля</h2>
+      </div>
       <div class="risks-main">
         <div class="risks-content">
           <div class="risks-number"></div>
@@ -310,10 +303,10 @@
     <span>Оренбург 2021</span>
   </footer>
 
-  <article id="popup" class="hidden">
-    <div class="popup-window popup-success-query">
+  <div id="popup" class="hidden">
+    <article class="popup-window popup-success-query">
       <div class="title">
-        <span>Ваша заявка успешно отправлена!</span>
+        <h2>Ваша заявка успешно отправлена!</h2>
       </div>
       <div class="content">
         <span>Скоро с вами свяжется специалист</span>
@@ -321,10 +314,10 @@
       <div class="button-list">
         <div class="button access-button close-button">Хорошо</div>
       </div>
-    </div>
-    <div class="popup-window popup-error-query">
+    </article>
+    <article class="popup-window popup-error-query">
       <div class="title">
-        <span>Упс, что-то пошло не так :(</span>
+        <h2>Упс, что-то пошло не так :(</h2>
       </div>
       <div class="content">
         <span>Попробуйте попробовать ещё раз, или свяжитесь со специалистом напрямую по номеру <a href="tel://89228427279">+7 (922) 842-72-79</a></span>
@@ -332,10 +325,10 @@
       <div class="button-list">
         <div class="button access-button close-button">Хорошо</div>
       </div>
-    </div>
-    <div class="popup-window popup-form">
+    </article>
+    <article class="popup-window popup-form">
         <div class="title">
-          <span>Форма заявки</span>
+          <h2>Форма заявки</h2>
         </div>
         <div class="content">
           <form class="query-form">
@@ -349,15 +342,15 @@
                 <span class="error-info"></span>
               </div>
               <div class="query_text_send confirm">Отправить</div>
-              <div class="query_preload_send confirm hidden"><img src="/assets/media/preloader.svg" /></div>
+              <div class="query_preload_send confirm hidden"><img src="/assets/media/preloader.svg"  alt="загрузка"/></div>
             </div>
           </form>
         </div>
         <div class="button-list">
           <div class="button cancel-button close-button">Отменить</div>
         </div>
-    </div>
-  </article>
+    </article>
+  </div>
 
   <script src="assets/js/main.js" defer></script>
 </body>

@@ -1,9 +1,10 @@
 <?php
+require_once "getToken.php";
 
 
 
 function makeRequest($methodName, $params) {
-  $token = "1788284086:AAHXDamwodUyyTt_Vj7wFERyCpfr3dYI6-E";
+  $token = getToken();
   return file_get_contents("https://api.telegram.org/bot" . $token . "/" . $methodName . "?" . http_build_query($params));
 }
 

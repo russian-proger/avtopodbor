@@ -13,4 +13,5 @@ Allow: /*.css
 Allow: /*.svg
 Allow: /*.webp
 Allow: /*.ttf
+Allow: /favicon.ico
 Sitemap: https://avtopodbor-orenburg.ru/sitemap.xml
