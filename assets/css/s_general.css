@@ -214,7 +214,10 @@ main > .button-wrapper > .details-link {
   color: black;
   text-decoration: none;
   background: white;
-  cursor: pointer; }
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font: 1.2em "Fira Sans", sans-serif; }
   main > .button-wrapper > .details-link:hover {
     background: #e6e6e6; }
 
@@ -298,15 +301,18 @@ main > .info-row {
     .services > .services-box > .services-box-header {
       margin-bottom: 60px; } }
   .services > .services-box > .services-box-header > h2.description {
-    position: relative; }
+    position: relative;
+    font-size: 300%;
+    display: flex;
+    font-weight: 500;
+    justify-content: center; }
     .services > .services-box > .services-box-header > h2.description::after {
       position: absolute;
       content: '';
       background: black;
-      width: 100%;
-      height: 4px;
-      bottom: -8px;
-      left: 0; }
+      width: 80%;
+      height: 3px;
+      bottom: -8px; }
 
 .services > .services-box > .services-box-header > span {
   font-size: 40pt; }
@@ -350,7 +356,7 @@ main > .info-row {
       height: 580px;
       border-color: #4caf50; }
     .services-box-main > .services-field > .field-title {
-      font-size: 20pt; }
+      font-size: 18pt; }
     .services-box-main > .services-field > .content {
       height: 100%;
       flex-shrink: 2; }
@@ -453,8 +459,17 @@ main > .info-row {
   display: flex;
   height: 20%;
   justify-content: center;
-  font-size: 40pt;
+  font-size: 30pt;
   margin-bottom: 100px; }
+  @media (max-width: 780px) {
+    .guarantee-box-header {
+      font-size: 26pt; } }
+  @media (max-width: 420px) {
+    .guarantee-box-header {
+      font-size: 23pt; } }
+  @media (max-width: 350px) {
+    .guarantee-box-header {
+      font-size: 20pt; } }
 
 .guarantee-list {
   box-sizing: border-box;
@@ -644,16 +659,13 @@ main > .info-row {
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
-    font-size: 130%; }
+    font-size: 200%; }
     @media (max-width: 780px) {
       .auto-selection-field > .auto-selection-header {
-        font-size: 110%; } }
+        font-size: 150%; } }
     @media (max-width: 420px) {
       .auto-selection-field > .auto-selection-header {
-        font-size: 90%; } }
-    @media (max-width: 350px) {
-      .auto-selection-field > .auto-selection-header {
-        font-size: 75%; } }
+        font-size: 100%; } }
   .auto-selection-field > .auto-selection-main {
     display: flex;
     justify-content: space-evenly; }
@@ -714,23 +726,17 @@ main > .info-row {
       width: 100%;
       padding: 50px 0;
       text-align: center;
-      font-size: 42px;
+      font-size: 26px;
       font-weight: bold; }
       @media (max-width: 1000px) {
         .risks > .risks-box > .risks-header {
-          font-size: 36px; } }
+          font-size: 24px; } }
       @media (max-width: 830px) {
         .risks > .risks-box > .risks-header {
-          font-size: 30px; } }
+          font-size: 20px; } }
       @media (max-width: 500px) {
         .risks > .risks-box > .risks-header {
-          font-size: 25px; } }
-      @media (max-width: 430px) {
-        .risks > .risks-box > .risks-header {
-          font-size: 20px; } }
-      @media (max-width: 330px) {
-        .risks > .risks-box > .risks-header {
-          font-size: 17px; } }
+          font-size: 15px; } }
     @media (max-width: 330px) {
       .risks > .risks-box > .risks-main > .risks-content {
         font-size: 10pt !important; } }
@@ -803,7 +809,7 @@ main > .info-row {
   border-radius: 7px; }
   .query-form > .query-title {
     color: #1C1C1C;
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: center;
     margin-bottom: 30px;
     position: relative; }
@@ -818,7 +824,7 @@ main > .info-row {
         bottom: -7px; } }
     @media (max-width: 420px) {
       .query-form > .query-title {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: bold; } }
   .query-form > .input-wrapper > .input > input, .query-form > .input-wrapper > .confirm {
     appearance: none;

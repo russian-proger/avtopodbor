@@ -232,6 +232,9 @@ main > .button-wrapper > .details-link
   text-decoration: none
   background: white
   cursor: pointer
+  display: flex
+  align-items: center
+  font: 1.2em "Fira Sans", sans-serif
 
   &:hover
     background: #e6e6e6
@@ -332,15 +335,18 @@ main > .info-row
 
   & > h2.description
     position: relative
+    font-size: 300%
+    display: flex
+    font-weight: 500
+    justify-content: center
 
     &::after
       position: absolute
       content: ''
       background: black
-      width: 100%
-      height: 4px
+      width: 80%
+      height: 3px
       bottom: -8px
-      left: 0
 
 .services > .services-box > .services-box-header > span
   font-size: 40pt
@@ -393,7 +399,7 @@ main > .info-row
       border-color: #4caf50
 
     & > .field-title
-      font-size: 20pt
+      font-size: 18pt
 
     & > .content
       height: 100%
@@ -509,8 +515,17 @@ main > .info-row
   display: flex
   height: 20%
   justify-content: center
-  font-size: 40pt
+  font-size: 30pt
   margin-bottom: 100px
+
+  @media (max-width: 780px)
+    font-size: 26pt
+
+  @media (max-width: 420px)
+    font-size: 23pt
+
+  @media (max-width: 350px)
+    font-size: 20pt
 
 .guarantee-list
   box-sizing: border-box
@@ -718,17 +733,14 @@ main > .info-row
     width: 100%
     text-align: center
     margin-bottom: 50px
-    font-size: 130%
+    font-size: 200%
     
 
     @media (max-width: 780px)
-      font-size: 110%
+      font-size: 150%
 
     @media (max-width: 420px)
-      font-size: 90%
-
-    @media (max-width: 350px)
-      font-size: 75%
+      font-size: 100%
 
   & > .auto-selection-main
     display: flex
@@ -793,19 +805,16 @@ main > .info-row
       width: 100%
       padding: 50px 0
       text-align: center
-      font-size: 42px
+      font-size: 26px
       font-weight: bold
       @media (max-width: 1000px)
-        font-size: 36px
+        font-size: 24px
       @media (max-width: 830px)
-        font-size: 30px
-      @media (max-width: 500px)
-        font-size: 25px
-      @media (max-width: 430px)
         font-size: 20px
-      @media (max-width: 330px)
-        font-size: 17px
-
+      @media (max-width: 500px)
+        font-size: 15px
+      
+      
     
     @media (max-width: 330px)
       & > .risks-main > .risks-content
@@ -887,7 +896,7 @@ main > .info-row
 
   & > .query-title
     color: #1C1C1C
-    font-size: 2rem
+    font-size: 1.6rem
     text-align: center
     margin-bottom: 30px
     position: relative
@@ -903,7 +912,7 @@ main > .info-row
         bottom: -7px
 
     @media (max-width: 420px)
-      font-size: 1.5rem
+      font-size: 1.2rem
       font-weight: bold
 
   & > .input-wrapper
